@@ -116,9 +116,15 @@ export default function Supplements() {
               </p>
             </div>
             <div className="supplement-card-actions">
-              <button className="btn btn-primary" style={{ flex: 1, justifyContent: 'center', fontSize: '0.85rem' }}>
-                {t('supplements.buy_now')}
-              </button>
+              <a
+                href={supp.shop_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+                style={{ flex: 1, justifyContent: 'center', fontSize: '0.85rem', textDecoration: 'none' }}
+              >
+                {t('supplements.buy_now')} → {supp.shop_name}
+              </a>
             </div>
           </div>
         ))}

@@ -55,6 +55,7 @@ class QuestionnaireResponse(Base):
     # Preferences
     preferred_form = Column(String)  # capsule, tablet, powder, liquid, gummy
     budget_monthly = Column(Float)
+    food_budget_monthly = Column(Float)  # monthly food/grocery budget in EUR
     prefer_organic = Column(Boolean, default=False)
     prefer_fairtrade = Column(Boolean, default=False)
     

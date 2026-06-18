@@ -1,0 +1,3469 @@
+{
+  "breakfast": [
+    {
+      "id": "b1",
+      "name": "Haferflocken mit Beeren",
+      "name_de": "Haferflocken mit Beeren und Walnüssen",
+      "name_en": "Oatmeal with Berries and Walnuts",
+      "image_url": "[https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Haferflocken",
+        "Blaubeeren",
+        "Walnüsse"
+      ],
+      "ingredients_de": [
+        "Haferflocken",
+        "Blaubeeren",
+        "Walnüsse"
+      ],
+      "ingredients_en": [
+        "Oats",
+        "Blueberries",
+        "Walnuts"
+      ],
+      "calories": 420,
+      "protein": 13,
+      "carbs": 58,
+      "fat": 16,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "nuts"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.4,
+        "vitamin_c": 12,
+        "vitamin_b12": 0.3,
+        "calcium": 180,
+        "magnesium": 105,
+        "iron": 3.8,
+        "zinc": 2.6,
+        "omega3": 1800,
+        "fiber": 9,
+        "potassium": 480
+      }
+    },
+    {
+      "id": "b2",
+      "name": "Tofu-Rührei",
+      "name_de": "Tofu-Rührei mit Spinat und Tomaten",
+      "name_en": "Tofu Scramble with Spinach and Tomatoes",
+      "image_url": "[https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Naturtofu",
+        "Spinat",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Naturtofu",
+        "Spinat",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Firm tofu",
+        "Spinach",
+        "Tomatoes"
+      ],
+      "calories": 390,
+      "protein": 24,
+      "carbs": 36,
+      "fat": 18,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.2,
+        "vitamin_c": 32,
+        "vitamin_b12": 0,
+        "calcium": 280,
+        "magnesium": 110,
+        "iron": 5.2,
+        "zinc": 2.8,
+        "omega3": 450,
+        "fiber": 7,
+        "potassium": 920
+      }
+    },
+    {
+      "id": "b3",
+      "name": "Apfel-Zimt-Porridge",
+      "name_de": "Apfel-Zimt-Porridge mit Mandeln",
+      "name_en": "Apple Cinnamon Porridge with Almonds",
+      "image_url": "[https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Haferflocken",
+        "Apfel",
+        "Mandeln"
+      ],
+      "ingredients_de": [
+        "Haferflocken",
+        "Apfel",
+        "Mandeln"
+      ],
+      "ingredients_en": [
+        "Oats",
+        "Apple",
+        "Almonds"
+      ],
+      "calories": 450,
+      "protein": 15,
+      "carbs": 62,
+      "fat": 16,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "nuts",
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 1.3,
+        "vitamin_c": 7,
+        "vitamin_b12": 0.6,
+        "calcium": 240,
+        "magnesium": 95,
+        "iron": 3.4,
+        "zinc": 2.4,
+        "omega3": 120,
+        "fiber": 8,
+        "potassium": 510
+      }
+    },
+    {
+      "id": "b4",
+      "name": "Griechischer Joghurt mit Nüssen",
+      "name_de": "Griechischer Joghurt mit Nüssen und Himbeeren",
+      "name_en": "Greek Yogurt with Nuts and Raspberries",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Griechischer Joghurt",
+        "Himbeeren",
+        "Mandeln"
+      ],
+      "ingredients_de": [
+        "Griechischer Joghurt",
+        "Himbeeren",
+        "Mandeln"
+      ],
+      "ingredients_en": [
+        "Greek yogurt",
+        "Raspberries",
+        "Almonds"
+      ],
+      "calories": 360,
+      "protein": 24,
+      "carbs": 24,
+      "fat": 19,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose",
+        "nuts"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.3,
+        "vitamin_c": 15,
+        "vitamin_b12": 1.1,
+        "calcium": 260,
+        "magnesium": 95,
+        "iron": 2.2,
+        "zinc": 2.1,
+        "omega3": 2300,
+        "fiber": 9,
+        "potassium": 420
+      }
+    },
+    {
+      "id": "b5",
+      "name": "Chia-Pudding mit Mango",
+      "name_de": "Chia-Pudding mit Mango und Kokos",
+      "name_en": "Chia Pudding with Mango and Coconut",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Chiasamen",
+        "Mango",
+        "Kokosdrink"
+      ],
+      "ingredients_de": [
+        "Chiasamen",
+        "Mango",
+        "Kokosdrink"
+      ],
+      "ingredients_en": [
+        "Chia seeds",
+        "Mango",
+        "Coconut drink"
+      ],
+      "calories": 380,
+      "protein": 9,
+      "carbs": 39,
+      "fat": 22,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 38,
+        "vitamin_b12": 0,
+        "calcium": 250,
+        "magnesium": 150,
+        "iron": 4.1,
+        "zinc": 2.2,
+        "omega3": 4800,
+        "fiber": 13,
+        "potassium": 520
+      }
+    },
+    {
+      "id": "b6",
+      "name": "Omelett mit Spinat",
+      "name_de": "Omelett mit Spinat, Feta und Kräutern",
+      "name_en": "Spinach, Feta and Herb Omelet",
+      "image_url": "[https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Eier",
+        "Spinat",
+        "Feta"
+      ],
+      "ingredients_de": [
+        "Eier",
+        "Spinat",
+        "Feta"
+      ],
+      "ingredients_en": [
+        "Eggs",
+        "Spinach",
+        "Feta cheese"
+      ],
+      "calories": 410,
+      "protein": 27,
+      "carbs": 10,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 4.8,
+        "vitamin_c": 24,
+        "vitamin_b12": 2.4,
+        "calcium": 290,
+        "magnesium": 85,
+        "iron": 4.2,
+        "zinc": 3.2,
+        "omega3": 480,
+        "fiber": 5,
+        "potassium": 760
+      }
+    },
+    {
+      "id": "b7",
+      "name": "Vollkornbrot mit Hüttenkäse",
+      "name_de": "Vollkornbrot mit Hüttenkäse und Radieschen",
+      "name_en": "Whole-Grain Bread with Cottage Cheese and Radishes",
+      "image_url": "[https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Vollkornbrot",
+        "Hüttenkäse",
+        "Radieschen"
+      ],
+      "ingredients_de": [
+        "Vollkornbrot",
+        "Hüttenkäse",
+        "Radieschen"
+      ],
+      "ingredients_en": [
+        "Whole-grain bread",
+        "Cottage cheese",
+        "Radishes"
+      ],
+      "calories": 370,
+      "protein": 25,
+      "carbs": 43,
+      "fat": 10,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.4,
+        "vitamin_c": 18,
+        "vitamin_b12": 1.2,
+        "calcium": 220,
+        "magnesium": 80,
+        "iron": 3.1,
+        "zinc": 2.7,
+        "omega3": 180,
+        "fiber": 8,
+        "potassium": 560
+      }
+    },
+    {
+      "id": "b8",
+      "name": "Avocado-Tomaten-Toast",
+      "name_de": "Vollkorntoast mit Avocado und Tomaten",
+      "name_en": "Whole-Grain Toast with Avocado and Tomatoes",
+      "image_url": "[https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Vollkorntoast",
+        "Avocado",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Vollkorntoast",
+        "Avocado",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Whole-grain toast",
+        "Avocado",
+        "Tomatoes"
+      ],
+      "calories": 430,
+      "protein": 11,
+      "carbs": 48,
+      "fat": 23,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 28,
+        "vitamin_b12": 0,
+        "calcium": 90,
+        "magnesium": 105,
+        "iron": 3.3,
+        "zinc": 2,
+        "omega3": 180,
+        "fiber": 12,
+        "potassium": 980
+      }
+    },
+    {
+      "id": "b9",
+      "name": "Lachs-Avocado-Teller",
+      "name_de": "Räucherlachs mit Avocado, Gurke und Ei",
+      "name_en": "Smoked Salmon with Avocado, Cucumber and Egg",
+      "image_url": "[https://images.unsplash.com/photo-1528712306091-ed0763094c98?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Räucherlachs",
+        "Avocado",
+        "Gurke"
+      ],
+      "ingredients_de": [
+        "Räucherlachs",
+        "Avocado",
+        "Gurke"
+      ],
+      "ingredients_en": [
+        "Smoked salmon",
+        "Avocado",
+        "Cucumber"
+      ],
+      "calories": 460,
+      "protein": 31,
+      "carbs": 12,
+      "fat": 33,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 12.5,
+        "vitamin_c": 17,
+        "vitamin_b12": 5.2,
+        "calcium": 90,
+        "magnesium": 75,
+        "iron": 2.4,
+        "zinc": 2.3,
+        "omega3": 2600,
+        "fiber": 8,
+        "potassium": 880
+      }
+    },
+    {
+      "id": "b10",
+      "name": "Obst-Nuss-Frühstück",
+      "name_de": "Frischer Obstteller mit Nüssen und Kokos",
+      "name_en": "Fresh Fruit Plate with Nuts and Coconut",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Banane",
+        "Beeren",
+        "Orange"
+      ],
+      "ingredients_de": [
+        "Banane",
+        "Beeren",
+        "Orange"
+      ],
+      "ingredients_en": [
+        "Banana",
+        "Berries",
+        "Orange"
+      ],
+      "calories": 350,
+      "protein": 8,
+      "carbs": 48,
+      "fat": 16,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian",
+        "paleo"
+      ],
+      "allergens": [
+        "nuts"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 95,
+        "vitamin_b12": 0,
+        "calcium": 95,
+        "magnesium": 110,
+        "iron": 2.2,
+        "zinc": 1.6,
+        "omega3": 160,
+        "fiber": 10,
+        "potassium": 920
+      }
+    },
+    {
+      "id": "b11",
+      "name": "Hirsebrei mit Birne",
+      "name_de": "Hirsebrei mit Birne und Kürbiskernen",
+      "name_en": "Millet Porridge with Pear and Pumpkin Seeds",
+      "image_url": "[https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Hirse",
+        "Birne",
+        "Kürbiskerne"
+      ],
+      "ingredients_de": [
+        "Hirse",
+        "Birne",
+        "Kürbiskerne"
+      ],
+      "ingredients_en": [
+        "Millet",
+        "Pear",
+        "Pumpkin seeds"
+      ],
+      "calories": 430,
+      "protein": 13,
+      "carbs": 61,
+      "fat": 15,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.4,
+        "vitamin_c": 8,
+        "vitamin_b12": 0.3,
+        "calcium": 170,
+        "magnesium": 145,
+        "iron": 4.8,
+        "zinc": 3.7,
+        "omega3": 140,
+        "fiber": 9,
+        "potassium": 520
+      }
+    },
+    {
+      "id": "b12",
+      "name": "Süßkartoffel-Ei-Bowl",
+      "name_de": "Süßkartoffel-Bowl mit Ei und Grünkohl",
+      "name_en": "Sweet Potato Bowl with Egg and Kale",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Süßkartoffel",
+        "Eier",
+        "Grünkohl"
+      ],
+      "ingredients_de": [
+        "Süßkartoffel",
+        "Eier",
+        "Grünkohl"
+      ],
+      "ingredients_en": [
+        "Sweet potato",
+        "Eggs",
+        "Kale"
+      ],
+      "calories": 490,
+      "protein": 19,
+      "carbs": 42,
+      "fat": 28,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 4.1,
+        "vitamin_c": 72,
+        "vitamin_b12": 2.2,
+        "calcium": 210,
+        "magnesium": 110,
+        "iron": 4,
+        "zinc": 2.7,
+        "omega3": 520,
+        "fiber": 11,
+        "potassium": 1250
+      }
+    },
+    {
+      "id": "b13",
+      "name": "Hüttenkäse-Gurken-Bowl",
+      "name_de": "Hüttenkäse mit Gurke, Kräutern und Leinsamen",
+      "name_en": "Cottage Cheese Bowl with Cucumber, Herbs and Flaxseed",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Hüttenkäse",
+        "Gurke",
+        "Leinsamen"
+      ],
+      "ingredients_de": [
+        "Hüttenkäse",
+        "Gurke",
+        "Leinsamen"
+      ],
+      "ingredients_en": [
+        "Cottage cheese",
+        "Cucumber",
+        "Flaxseed"
+      ],
+      "calories": 330,
+      "protein": 29,
+      "carbs": 16,
+      "fat": 17,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.5,
+        "vitamin_c": 22,
+        "vitamin_b12": 1.4,
+        "calcium": 250,
+        "magnesium": 80,
+        "iron": 1.9,
+        "zinc": 2,
+        "omega3": 2900,
+        "fiber": 7,
+        "potassium": 610
+      }
+    },
+    {
+      "id": "b14",
+      "name": "Grüne Smoothie-Bowl",
+      "name_de": "Grüne Smoothie-Bowl mit Spinat und Kiwi",
+      "name_en": "Green Smoothie Bowl with Spinach and Kiwi",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Spinat",
+        "Kiwi",
+        "Banane"
+      ],
+      "ingredients_de": [
+        "Spinat",
+        "Kiwi",
+        "Banane"
+      ],
+      "ingredients_en": [
+        "Spinach",
+        "Kiwi",
+        "Banana"
+      ],
+      "calories": 390,
+      "protein": 11,
+      "carbs": 57,
+      "fat": 13,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 110,
+        "vitamin_b12": 0,
+        "calcium": 170,
+        "magnesium": 150,
+        "iron": 4.4,
+        "zinc": 2,
+        "omega3": 2700,
+        "fiber": 13,
+        "potassium": 980
+      }
+    },
+    {
+      "id": "b15",
+      "name": "Puten-Gemüse-Frühstück",
+      "name_de": "Putenstreifen mit Gemüse und Avocado",
+      "name_en": "Turkey Breakfast Bowl with Vegetables and Avocado",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Putenbrust",
+        "Paprika",
+        "Avocado"
+      ],
+      "ingredients_de": [
+        "Putenbrust",
+        "Paprika",
+        "Avocado"
+      ],
+      "ingredients_en": [
+        "Turkey breast",
+        "Bell pepper",
+        "Avocado"
+      ],
+      "calories": 440,
+      "protein": 37,
+      "carbs": 18,
+      "fat": 25,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.6,
+        "vitamin_c": 85,
+        "vitamin_b12": 1.3,
+        "calcium": 70,
+        "magnesium": 95,
+        "iron": 2.8,
+        "zinc": 3.7,
+        "omega3": 420,
+        "fiber": 8,
+        "potassium": 1080
+      }
+    },
+    {
+      "id": "b16",
+      "name": "Pilz-Kräuter-Omelett",
+      "name_de": "Omelett mit Champignons und frischen Kräutern",
+      "name_en": "Mushroom and Herb Omelet",
+      "image_url": "[https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Eier",
+        "Champignons",
+        "Kräuter"
+      ],
+      "ingredients_de": [
+        "Eier",
+        "Champignons",
+        "Kräuter"
+      ],
+      "ingredients_en": [
+        "Eggs",
+        "Mushrooms",
+        "Fresh herbs"
+      ],
+      "calories": 400,
+      "protein": 25,
+      "carbs": 9,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 5.6,
+        "vitamin_c": 11,
+        "vitamin_b12": 2.5,
+        "calcium": 230,
+        "magnesium": 55,
+        "iron": 3,
+        "zinc": 2.8,
+        "omega3": 430,
+        "fiber": 3,
+        "potassium": 620
+      }
+    },
+    {
+      "id": "b17",
+      "name": "Reis-Congee mit Gemüse",
+      "name_de": "Reis-Congee mit Pilzen, Ingwer und Pak Choi",
+      "name_en": "Rice Congee with Mushrooms, Ginger and Pak Choi",
+      "image_url": "[https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Reis",
+        "Champignons",
+        "Pak Choi"
+      ],
+      "ingredients_de": [
+        "Reis",
+        "Champignons",
+        "Pak Choi"
+      ],
+      "ingredients_en": [
+        "Rice",
+        "Mushrooms",
+        "Pak choi"
+      ],
+      "calories": 350,
+      "protein": 9,
+      "carbs": 58,
+      "fat": 9,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.2,
+        "vitamin_c": 36,
+        "vitamin_b12": 0,
+        "calcium": 150,
+        "magnesium": 70,
+        "iron": 2.5,
+        "zinc": 1.6,
+        "omega3": 150,
+        "fiber": 5,
+        "potassium": 720
+      }
+    },
+    {
+      "id": "b18",
+      "name": "Kefir-Beeren-Bowl",
+      "name_de": "Kefir-Bowl mit Beeren und Haferkleie",
+      "name_en": "Kefir Berry Bowl with Oat Bran",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Kefir",
+        "Beeren",
+        "Haferkleie"
+      ],
+      "ingredients_de": [
+        "Kefir",
+        "Beeren",
+        "Haferkleie"
+      ],
+      "ingredients_en": [
+        "Kefir",
+        "Mixed berries",
+        "Oat bran"
+      ],
+      "calories": 400,
+      "protein": 20,
+      "carbs": 49,
+      "fat": 14,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 1,
+        "vitamin_c": 35,
+        "vitamin_b12": 1.5,
+        "calcium": 320,
+        "magnesium": 115,
+        "iron": 3.2,
+        "zinc": 2.4,
+        "omega3": 250,
+        "fiber": 11,
+        "potassium": 650
+      }
+    },
+    {
+      "id": "b19",
+      "name": "Kokos-Beeren-Bowl",
+      "name_de": "Kokosjoghurt mit Beeren und Mandeln",
+      "name_en": "Coconut Yogurt with Berries and Almonds",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Kokosjoghurt",
+        "Beeren",
+        "Mandeln"
+      ],
+      "ingredients_de": [
+        "Kokosjoghurt",
+        "Beeren",
+        "Mandeln"
+      ],
+      "ingredients_en": [
+        "Coconut yogurt",
+        "Berries",
+        "Almonds"
+      ],
+      "calories": 420,
+      "protein": 9,
+      "carbs": 31,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian",
+        "paleo"
+      ],
+      "allergens": [
+        "nuts"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 42,
+        "vitamin_b12": 0,
+        "calcium": 180,
+        "magnesium": 155,
+        "iron": 4.3,
+        "zinc": 2.6,
+        "omega3": 4100,
+        "fiber": 13,
+        "potassium": 620
+      }
+    },
+    {
+      "id": "b20",
+      "name": "Low-Carb-Chia-Bowl",
+      "name_de": "Chia-Kokos-Bowl mit Heidelbeeren",
+      "name_en": "Low-Carb Chia Coconut Bowl with Blueberries",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Chiasamen",
+        "Kokosmilch",
+        "Heidelbeeren"
+      ],
+      "ingredients_de": [
+        "Chiasamen",
+        "Kokosmilch",
+        "Heidelbeeren"
+      ],
+      "ingredients_en": [
+        "Chia seeds",
+        "Coconut milk",
+        "Blueberries"
+      ],
+      "calories": 470,
+      "protein": 11,
+      "carbs": 24,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "nuts"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 16,
+        "vitamin_b12": 0,
+        "calcium": 260,
+        "magnesium": 170,
+        "iron": 4.6,
+        "zinc": 2.8,
+        "omega3": 5000,
+        "fiber": 15,
+        "potassium": 590
+      }
+    },
+    {
+      "id": "b21",
+      "name": "Bircher Müsli",
+      "name_de": "Bircher Müsli mit Apfel und Joghurt",
+      "name_en": "Bircher Muesli with Apple and Yogurt",
+      "image_url": "[https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Haferflocken",
+        "Apfel",
+        "Joghurt"
+      ],
+      "ingredients_de": [
+        "Haferflocken",
+        "Apfel",
+        "Joghurt"
+      ],
+      "ingredients_en": [
+        "Oats",
+        "Apple",
+        "Yogurt"
+      ],
+      "calories": 480,
+      "protein": 17,
+      "carbs": 66,
+      "fat": 17,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "lactose",
+        "nuts"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.8,
+        "vitamin_c": 10,
+        "vitamin_b12": 0.9,
+        "calcium": 230,
+        "magnesium": 105,
+        "iron": 3.8,
+        "zinc": 2.7,
+        "omega3": 250,
+        "fiber": 9,
+        "potassium": 620
+      }
+    },
+    {
+      "id": "b22",
+      "name": "Quinoa-Frühstücksbowl",
+      "name_de": "Quinoa-Bowl mit Pfirsich und Kürbiskernen",
+      "name_en": "Quinoa Breakfast Bowl with Peach and Pumpkin Seeds",
+      "image_url": "[https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Quinoa",
+        "Pfirsich",
+        "Kürbiskerne"
+      ],
+      "ingredients_de": [
+        "Quinoa",
+        "Pfirsich",
+        "Kürbiskerne"
+      ],
+      "ingredients_en": [
+        "Quinoa",
+        "Peach",
+        "Pumpkin seeds"
+      ],
+      "calories": 440,
+      "protein": 15,
+      "carbs": 58,
+      "fat": 16,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.3,
+        "vitamin_c": 24,
+        "vitamin_b12": 0.2,
+        "calcium": 180,
+        "magnesium": 180,
+        "iron": 5.2,
+        "zinc": 4.2,
+        "omega3": 260,
+        "fiber": 10,
+        "potassium": 720
+      }
+    },
+    {
+      "id": "b23",
+      "name": "Eier-Gemüse-Pfanne",
+      "name_de": "Eier-Gemüse-Pfanne mit Brokkoli und Paprika",
+      "name_en": "Egg and Vegetable Skillet with Broccoli and Pepper",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Eier",
+        "Brokkoli",
+        "Paprika"
+      ],
+      "ingredients_de": [
+        "Eier",
+        "Brokkoli",
+        "Paprika"
+      ],
+      "ingredients_en": [
+        "Eggs",
+        "Broccoli",
+        "Bell pepper"
+      ],
+      "calories": 430,
+      "protein": 23,
+      "carbs": 22,
+      "fat": 28,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 4.5,
+        "vitamin_c": 125,
+        "vitamin_b12": 2.3,
+        "calcium": 180,
+        "magnesium": 85,
+        "iron": 4,
+        "zinc": 2.9,
+        "omega3": 460,
+        "fiber": 8,
+        "potassium": 930
+      }
+    },
+    {
+      "id": "b24",
+      "name": "Shakshuka",
+      "name_de": "Shakshuka mit Eiern, Tomaten und Paprika",
+      "name_en": "Shakshuka with Eggs, Tomatoes and Peppers",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Eier",
+        "Tomaten",
+        "Paprika"
+      ],
+      "ingredients_de": [
+        "Eier",
+        "Tomaten",
+        "Paprika"
+      ],
+      "ingredients_en": [
+        "Eggs",
+        "Tomatoes",
+        "Bell peppers"
+      ],
+      "calories": 380,
+      "protein": 22,
+      "carbs": 24,
+      "fat": 22,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 4.2,
+        "vitamin_c": 92,
+        "vitamin_b12": 2.2,
+        "calcium": 150,
+        "magnesium": 75,
+        "iron": 4.1,
+        "zinc": 2.8,
+        "omega3": 430,
+        "fiber": 7,
+        "potassium": 980
+      }
+    },
+    {
+      "id": "b25",
+      "name": "Roggenbrot mit Forelle",
+      "name_de": "Roggenbrot mit Räucherforelle und Meerrettich",
+      "name_en": "Rye Bread with Smoked Trout and Horseradish",
+      "image_url": "[https://images.unsplash.com/photo-1528712306091-ed0763094c98?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Roggenbrot",
+        "Räucherforelle",
+        "Gurke"
+      ],
+      "ingredients_de": [
+        "Roggenbrot",
+        "Räucherforelle",
+        "Gurke"
+      ],
+      "ingredients_en": [
+        "Rye bread",
+        "Smoked trout",
+        "Cucumber"
+      ],
+      "calories": 450,
+      "protein": 30,
+      "carbs": 43,
+      "fat": 18,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 11,
+        "vitamin_c": 15,
+        "vitamin_b12": 5.8,
+        "calcium": 140,
+        "magnesium": 80,
+        "iron": 3.1,
+        "zinc": 2.5,
+        "omega3": 2100,
+        "fiber": 7,
+        "potassium": 720
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "l1",
+      "name": "Linseneintopf",
+      "name_de": "Deutscher Linseneintopf mit Wurzelgemüse",
+      "name_en": "German Lentil Stew with Root Vegetables",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Linsen",
+        "Karotten",
+        "Sellerie"
+      ],
+      "ingredients_de": [
+        "Linsen",
+        "Karotten",
+        "Sellerie"
+      ],
+      "ingredients_en": [
+        "Lentils",
+        "Carrots",
+        "Celery"
+      ],
+      "calories": 610,
+      "protein": 28,
+      "carbs": 91,
+      "fat": 15,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 38,
+        "vitamin_b12": 0,
+        "calcium": 150,
+        "magnesium": 165,
+        "iron": 8.6,
+        "zinc": 4.2,
+        "omega3": 420,
+        "fiber": 20,
+        "potassium": 1450
+      }
+    },
+    {
+      "id": "l2",
+      "name": "Hähnchen-Kartoffel-Teller",
+      "name_de": "Gebratene Hähnchenbrust mit Kartoffeln und grünen Bohnen",
+      "name_en": "Roasted Chicken Breast with Potatoes and Green Beans",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Hähnchenbrust",
+        "Kartoffeln",
+        "Grüne Bohnen"
+      ],
+      "ingredients_de": [
+        "Hähnchenbrust",
+        "Kartoffeln",
+        "Grüne Bohnen"
+      ],
+      "ingredients_en": [
+        "Chicken breast",
+        "Potatoes",
+        "Green beans"
+      ],
+      "calories": 690,
+      "protein": 55,
+      "carbs": 62,
+      "fat": 24,
+      "suitable_for": [
+        "omnivore",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.7,
+        "vitamin_c": 42,
+        "vitamin_b12": 1.1,
+        "calcium": 105,
+        "magnesium": 120,
+        "iron": 4.2,
+        "zinc": 4.4,
+        "omega3": 480,
+        "fiber": 11,
+        "potassium": 1580
+      }
+    },
+    {
+      "id": "l3",
+      "name": "Mediterrane Kichererbsen-Bowl",
+      "name_de": "Kichererbsen-Bowl mit Couscous und Ofengemüse",
+      "name_en": "Mediterranean Chickpea Bowl with Couscous and Roasted Vegetables",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Kichererbsen",
+        "Couscous",
+        "Zucchini"
+      ],
+      "ingredients_de": [
+        "Kichererbsen",
+        "Couscous",
+        "Zucchini"
+      ],
+      "ingredients_en": [
+        "Chickpeas",
+        "Couscous",
+        "Zucchini"
+      ],
+      "calories": 720,
+      "protein": 24,
+      "carbs": 105,
+      "fat": 23,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 95,
+        "vitamin_b12": 0,
+        "calcium": 180,
+        "magnesium": 180,
+        "iron": 7.5,
+        "zinc": 4.4,
+        "omega3": 350,
+        "fiber": 18,
+        "potassium": 1320
+      }
+    },
+    {
+      "id": "l4",
+      "name": "Lachs-Quinoa-Salat",
+      "name_de": "Lachs-Quinoa-Salat mit Spinat und Avocado",
+      "name_en": "Salmon Quinoa Salad with Spinach and Avocado",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Lachs",
+        "Quinoa",
+        "Spinat"
+      ],
+      "ingredients_de": [
+        "Lachs",
+        "Quinoa",
+        "Spinat"
+      ],
+      "ingredients_en": [
+        "Salmon",
+        "Quinoa",
+        "Spinach"
+      ],
+      "calories": 740,
+      "protein": 42,
+      "carbs": 54,
+      "fat": 39,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 18,
+        "vitamin_c": 48,
+        "vitamin_b12": 5.6,
+        "calcium": 160,
+        "magnesium": 170,
+        "iron": 5,
+        "zinc": 3.8,
+        "omega3": 3200,
+        "fiber": 12,
+        "potassium": 1450
+      }
+    },
+    {
+      "id": "l5",
+      "name": "Tofu-Gemüse-Wok",
+      "name_de": "Tofu-Gemüse-Wok mit Naturreis",
+      "name_en": "Tofu Vegetable Stir-Fry with Brown Rice",
+      "image_url": "[https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Naturtofu",
+        "Naturreis",
+        "Brokkoli"
+      ],
+      "ingredients_de": [
+        "Naturtofu",
+        "Naturreis",
+        "Brokkoli"
+      ],
+      "ingredients_en": [
+        "Firm tofu",
+        "Brown rice",
+        "Broccoli"
+      ],
+      "calories": 680,
+      "protein": 31,
+      "carbs": 86,
+      "fat": 24,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.2,
+        "vitamin_c": 118,
+        "vitamin_b12": 0,
+        "calcium": 330,
+        "magnesium": 185,
+        "iron": 7.2,
+        "zinc": 4,
+        "omega3": 620,
+        "fiber": 14,
+        "potassium": 1280
+      }
+    },
+    {
+      "id": "l6",
+      "name": "Rindfleisch-Brokkoli-Wok",
+      "name_de": "Rindfleisch mit Brokkoli und Blumenkohlreis",
+      "name_en": "Beef and Broccoli Stir-Fry with Cauliflower Rice",
+      "image_url": "[https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Rindfleisch",
+        "Brokkoli",
+        "Blumenkohl"
+      ],
+      "ingredients_de": [
+        "Rindfleisch",
+        "Brokkoli",
+        "Blumenkohl"
+      ],
+      "ingredients_en": [
+        "Beef",
+        "Broccoli",
+        "Cauliflower"
+      ],
+      "calories": 610,
+      "protein": 48,
+      "carbs": 24,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.4,
+        "vitamin_c": 145,
+        "vitamin_b12": 2.8,
+        "calcium": 150,
+        "magnesium": 115,
+        "iron": 5.8,
+        "zinc": 8.2,
+        "omega3": 520,
+        "fiber": 10,
+        "potassium": 1320
+      }
+    },
+    {
+      "id": "l7",
+      "name": "Falafel-Teller",
+      "name_de": "Falafel mit Taboulé, Hummus und Salat",
+      "name_en": "Falafel Plate with Tabbouleh, Hummus and Salad",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Falafel",
+        "Bulgur",
+        "Hummus"
+      ],
+      "ingredients_de": [
+        "Falafel",
+        "Bulgur",
+        "Hummus"
+      ],
+      "ingredients_en": [
+        "Falafel",
+        "Bulgur",
+        "Hummus"
+      ],
+      "calories": 760,
+      "protein": 25,
+      "carbs": 99,
+      "fat": 30,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 72,
+        "vitamin_b12": 0,
+        "calcium": 190,
+        "magnesium": 170,
+        "iron": 7.8,
+        "zinc": 4.5,
+        "omega3": 400,
+        "fiber": 19,
+        "potassium": 1220
+      }
+    },
+    {
+      "id": "l8",
+      "name": "Kabeljau mit Gemüse",
+      "name_de": "Gebratener Kabeljau mit Ratatouille und Kartoffeln",
+      "name_en": "Pan-Seared Cod with Ratatouille and Potatoes",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Kabeljau",
+        "Kartoffeln",
+        "Zucchini"
+      ],
+      "ingredients_de": [
+        "Kabeljau",
+        "Kartoffeln",
+        "Zucchini"
+      ],
+      "ingredients_en": [
+        "Cod",
+        "Potatoes",
+        "Zucchini"
+      ],
+      "calories": 640,
+      "protein": 45,
+      "carbs": 58,
+      "fat": 24,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "paleo"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 7.5,
+        "vitamin_c": 74,
+        "vitamin_b12": 3.2,
+        "calcium": 120,
+        "magnesium": 105,
+        "iron": 3.1,
+        "zinc": 2.4,
+        "omega3": 950,
+        "fiber": 12,
+        "potassium": 1550
+      }
+    },
+    {
+      "id": "l9",
+      "name": "Caprese-Nudelsalat",
+      "name_de": "Vollkorn-Nudelsalat mit Mozzarella und Tomaten",
+      "name_en": "Whole-Grain Pasta Salad with Mozzarella and Tomatoes",
+      "image_url": "[https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Vollkornnudeln",
+        "Mozzarella",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Vollkornnudeln",
+        "Mozzarella",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Whole-grain pasta",
+        "Mozzarella",
+        "Tomatoes"
+      ],
+      "calories": 710,
+      "protein": 30,
+      "carbs": 84,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.6,
+        "vitamin_c": 42,
+        "vitamin_b12": 1.8,
+        "calcium": 360,
+        "magnesium": 120,
+        "iron": 4.5,
+        "zinc": 3.8,
+        "omega3": 320,
+        "fiber": 13,
+        "potassium": 930
+      }
+    },
+    {
+      "id": "l10",
+      "name": "Thai-Kokos-Curry",
+      "name_de": "Thai-Kokos-Curry mit Tofu und Gemüse",
+      "name_en": "Thai Coconut Curry with Tofu and Vegetables",
+      "image_url": "[https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Naturtofu",
+        "Kokosmilch",
+        "Brokkoli"
+      ],
+      "ingredients_de": [
+        "Naturtofu",
+        "Kokosmilch",
+        "Brokkoli"
+      ],
+      "ingredients_en": [
+        "Firm tofu",
+        "Coconut milk",
+        "Broccoli"
+      ],
+      "calories": 780,
+      "protein": 28,
+      "carbs": 82,
+      "fat": 39,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.2,
+        "vitamin_c": 92,
+        "vitamin_b12": 0,
+        "calcium": 310,
+        "magnesium": 155,
+        "iron": 6.4,
+        "zinc": 3.6,
+        "omega3": 500,
+        "fiber": 12,
+        "potassium": 1350
+      }
+    },
+    {
+      "id": "l11",
+      "name": "Puten-Zucchini-Pfanne",
+      "name_de": "Puten-Zucchini-Pfanne mit Blumenkohlreis",
+      "name_en": "Turkey Zucchini Skillet with Cauliflower Rice",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Putenbrust",
+        "Zucchini",
+        "Blumenkohl"
+      ],
+      "ingredients_de": [
+        "Putenbrust",
+        "Zucchini",
+        "Blumenkohl"
+      ],
+      "ingredients_en": [
+        "Turkey breast",
+        "Zucchini",
+        "Cauliflower"
+      ],
+      "calories": 560,
+      "protein": 50,
+      "carbs": 22,
+      "fat": 30,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.5,
+        "vitamin_c": 108,
+        "vitamin_b12": 1.4,
+        "calcium": 115,
+        "magnesium": 105,
+        "iron": 3.2,
+        "zinc": 4.5,
+        "omega3": 430,
+        "fiber": 9,
+        "potassium": 1420
+      }
+    },
+    {
+      "id": "l12",
+      "name": "Griechischer Bauernsalat",
+      "name_de": "Griechischer Bauernsalat mit Feta und Oliven",
+      "name_en": "Greek Village Salad with Feta and Olives",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Tomaten",
+        "Gurke",
+        "Feta"
+      ],
+      "ingredients_de": [
+        "Tomaten",
+        "Gurke",
+        "Feta"
+      ],
+      "ingredients_en": [
+        "Tomatoes",
+        "Cucumber",
+        "Feta cheese"
+      ],
+      "calories": 540,
+      "protein": 18,
+      "carbs": 28,
+      "fat": 40,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.4,
+        "vitamin_c": 105,
+        "vitamin_b12": 1.2,
+        "calcium": 360,
+        "magnesium": 90,
+        "iron": 3,
+        "zinc": 2.8,
+        "omega3": 340,
+        "fiber": 9,
+        "potassium": 1150
+      }
+    },
+    {
+      "id": "l13",
+      "name": "Sushi-Bowl mit Lachs",
+      "name_de": "Sushi-Bowl mit Lachs, Reis und Edamame",
+      "name_en": "Salmon Sushi Bowl with Rice and Edamame",
+      "image_url": "[https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Lachs",
+        "Sushireis",
+        "Edamame"
+      ],
+      "ingredients_de": [
+        "Lachs",
+        "Sushireis",
+        "Edamame"
+      ],
+      "ingredients_en": [
+        "Salmon",
+        "Sushi rice",
+        "Edamame"
+      ],
+      "calories": 790,
+      "protein": 41,
+      "carbs": 86,
+      "fat": 31,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian"
+      ],
+      "allergens": [
+        "fish",
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 16,
+        "vitamin_c": 24,
+        "vitamin_b12": 5.2,
+        "calcium": 130,
+        "magnesium": 165,
+        "iron": 4.4,
+        "zinc": 3.6,
+        "omega3": 2900,
+        "fiber": 10,
+        "potassium": 1250
+      }
+    },
+    {
+      "id": "l14",
+      "name": "Buddha Bowl",
+      "name_de": "Buddha Bowl mit Quinoa, Süßkartoffel und Kichererbsen",
+      "name_en": "Buddha Bowl with Quinoa, Sweet Potato and Chickpeas",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Quinoa",
+        "Süßkartoffel",
+        "Kichererbsen"
+      ],
+      "ingredients_de": [
+        "Quinoa",
+        "Süßkartoffel",
+        "Kichererbsen"
+      ],
+      "ingredients_en": [
+        "Quinoa",
+        "Sweet potato",
+        "Chickpeas"
+      ],
+      "calories": 770,
+      "protein": 24,
+      "carbs": 106,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 105,
+        "vitamin_b12": 0,
+        "calcium": 240,
+        "magnesium": 230,
+        "iron": 8.2,
+        "zinc": 5.2,
+        "omega3": 520,
+        "fiber": 22,
+        "potassium": 1780
+      }
+    },
+    {
+      "id": "l15",
+      "name": "Garnelen-Zucchini-Pfanne",
+      "name_de": "Garnelen mit Zucchini, Tomaten und Blumenkohlreis",
+      "name_en": "Shrimp Zucchini Skillet with Tomatoes and Cauliflower Rice",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Garnelen",
+        "Zucchini",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Garnelen",
+        "Zucchini",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Shrimp",
+        "Zucchini",
+        "Tomatoes"
+      ],
+      "calories": 550,
+      "protein": 46,
+      "carbs": 25,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "shellfish"
+      ],
+      "nutrients": {
+        "vitamin_d": 1,
+        "vitamin_c": 86,
+        "vitamin_b12": 2.8,
+        "calcium": 180,
+        "magnesium": 115,
+        "iron": 3.8,
+        "zinc": 3.5,
+        "omega3": 850,
+        "fiber": 9,
+        "potassium": 1340
+      }
+    },
+    {
+      "id": "l16",
+      "name": "Käsespätzle mit Salat",
+      "name_de": "Käsespätzle mit Röstzwiebeln und Blattsalat",
+      "name_en": "Cheese Spaetzle with Fried Onions and Leaf Salad",
+      "image_url": "[https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Spätzle",
+        "Bergkäse",
+        "Zwiebeln"
+      ],
+      "ingredients_de": [
+        "Spätzle",
+        "Bergkäse",
+        "Zwiebeln"
+      ],
+      "ingredients_en": [
+        "Spaetzle",
+        "Mountain cheese",
+        "Onions"
+      ],
+      "calories": 790,
+      "protein": 31,
+      "carbs": 88,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 1.2,
+        "vitamin_c": 24,
+        "vitamin_b12": 2.1,
+        "calcium": 520,
+        "magnesium": 95,
+        "iron": 4,
+        "zinc": 4.2,
+        "omega3": 220,
+        "fiber": 8,
+        "potassium": 760
+      }
+    },
+    {
+      "id": "l17",
+      "name": "Miso-Nudel-Suppe",
+      "name_de": "Miso-Nudel-Suppe mit Tofu und Pak Choi",
+      "name_en": "Miso Noodle Soup with Tofu and Pak Choi",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Weizennudeln",
+        "Miso",
+        "Naturtofu"
+      ],
+      "ingredients_de": [
+        "Weizennudeln",
+        "Miso",
+        "Naturtofu"
+      ],
+      "ingredients_en": [
+        "Wheat noodles",
+        "Miso paste",
+        "Firm tofu"
+      ],
+      "calories": 620,
+      "protein": 29,
+      "carbs": 82,
+      "fat": 20,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten",
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.4,
+        "vitamin_c": 48,
+        "vitamin_b12": 0,
+        "calcium": 280,
+        "magnesium": 130,
+        "iron": 5.6,
+        "zinc": 3.3,
+        "omega3": 450,
+        "fiber": 10,
+        "potassium": 1120
+      }
+    },
+    {
+      "id": "l18",
+      "name": "Caesar-Salat mit Hähnchen",
+      "name_de": "Caesar-Salat mit Hähnchen und Parmesan",
+      "name_en": "Chicken Caesar Salad with Parmesan",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Hähnchenbrust",
+        "Römersalat",
+        "Parmesan"
+      ],
+      "ingredients_de": [
+        "Hähnchenbrust",
+        "Römersalat",
+        "Parmesan"
+      ],
+      "ingredients_en": [
+        "Chicken breast",
+        "Romaine lettuce",
+        "Parmesan"
+      ],
+      "calories": 670,
+      "protein": 49,
+      "carbs": 30,
+      "fat": 39,
+      "suitable_for": [
+        "omnivore"
+      ],
+      "allergens": [
+        "gluten",
+        "lactose",
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 1,
+        "vitamin_c": 38,
+        "vitamin_b12": 1.8,
+        "calcium": 380,
+        "magnesium": 80,
+        "iron": 3.2,
+        "zinc": 4.2,
+        "omega3": 520,
+        "fiber": 7,
+        "potassium": 980
+      }
+    },
+    {
+      "id": "l19",
+      "name": "Auberginen-Linsen-Curry",
+      "name_de": "Auberginen-Linsen-Curry mit Spinat",
+      "name_en": "Eggplant Lentil Curry with Spinach",
+      "image_url": "[https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Rote Linsen",
+        "Aubergine",
+        "Spinat"
+      ],
+      "ingredients_de": [
+        "Rote Linsen",
+        "Aubergine",
+        "Spinat"
+      ],
+      "ingredients_en": [
+        "Red lentils",
+        "Eggplant",
+        "Spinach"
+      ],
+      "calories": 680,
+      "protein": 25,
+      "carbs": 78,
+      "fat": 30,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 88,
+        "vitamin_b12": 0,
+        "calcium": 230,
+        "magnesium": 195,
+        "iron": 8.8,
+        "zinc": 4.2,
+        "omega3": 520,
+        "fiber": 21,
+        "potassium": 1540
+      }
+    },
+    {
+      "id": "l20",
+      "name": "Thunfisch-Bohnen-Salat",
+      "name_de": "Thunfischsalat mit weißen Bohnen und Tomaten",
+      "name_en": "Tuna and White Bean Salad with Tomatoes",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Thunfisch",
+        "Weiße Bohnen",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Thunfisch",
+        "Weiße Bohnen",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Tuna",
+        "White beans",
+        "Tomatoes"
+      ],
+      "calories": 650,
+      "protein": 45,
+      "carbs": 48,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 6.8,
+        "vitamin_c": 42,
+        "vitamin_b12": 4.6,
+        "calcium": 140,
+        "magnesium": 125,
+        "iron": 4.8,
+        "zinc": 3,
+        "omega3": 1900,
+        "fiber": 13,
+        "potassium": 1280
+      }
+    },
+    {
+      "id": "l21",
+      "name": "Low-Carb-Hähnchen-Bowl",
+      "name_de": "Hähnchen-Bowl mit Avocado und Brokkoli",
+      "name_en": "Low-Carb Chicken Bowl with Avocado and Broccoli",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Hähnchenbrust",
+        "Avocado",
+        "Brokkoli"
+      ],
+      "ingredients_de": [
+        "Hähnchenbrust",
+        "Avocado",
+        "Brokkoli"
+      ],
+      "ingredients_en": [
+        "Chicken breast",
+        "Avocado",
+        "Broccoli"
+      ],
+      "calories": 700,
+      "protein": 52,
+      "carbs": 27,
+      "fat": 43,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.8,
+        "vitamin_c": 126,
+        "vitamin_b12": 1.2,
+        "calcium": 180,
+        "magnesium": 155,
+        "iron": 4.8,
+        "zinc": 4.8,
+        "omega3": 650,
+        "fiber": 14,
+        "potassium": 1620
+      }
+    },
+    {
+      "id": "l22",
+      "name": "Halloumi-Gemüse-Teller",
+      "name_de": "Gegrillter Halloumi mit Ofengemüse und Salat",
+      "name_en": "Grilled Halloumi with Roasted Vegetables and Salad",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Halloumi",
+        "Zucchini",
+        "Paprika"
+      ],
+      "ingredients_de": [
+        "Halloumi",
+        "Zucchini",
+        "Paprika"
+      ],
+      "ingredients_en": [
+        "Halloumi",
+        "Zucchini",
+        "Bell pepper"
+      ],
+      "calories": 720,
+      "protein": 31,
+      "carbs": 38,
+      "fat": 49,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.8,
+        "vitamin_c": 112,
+        "vitamin_b12": 2,
+        "calcium": 600,
+        "magnesium": 105,
+        "iron": 3.5,
+        "zinc": 4.8,
+        "omega3": 350,
+        "fiber": 11,
+        "potassium": 1210
+      }
+    },
+    {
+      "id": "l23",
+      "name": "Rindfleisch-Salat",
+      "name_de": "Rindfleischsalat mit Avocado und Paprika",
+      "name_en": "Beef Salad with Avocado and Bell Pepper",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Rindfleisch",
+        "Avocado",
+        "Paprika"
+      ],
+      "ingredients_de": [
+        "Rindfleisch",
+        "Avocado",
+        "Paprika"
+      ],
+      "ingredients_en": [
+        "Beef",
+        "Avocado",
+        "Bell pepper"
+      ],
+      "calories": 660,
+      "protein": 43,
+      "carbs": 22,
+      "fat": 45,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.4,
+        "vitamin_c": 104,
+        "vitamin_b12": 2.7,
+        "calcium": 95,
+        "magnesium": 120,
+        "iron": 5.2,
+        "zinc": 8.6,
+        "omega3": 520,
+        "fiber": 10,
+        "potassium": 1320
+      }
+    },
+    {
+      "id": "l24",
+      "name": "Gebratener Reis mit Tempeh",
+      "name_de": "Gebratener Reis mit Tempeh und asiatischem Gemüse",
+      "name_en": "Fried Rice with Tempeh and Asian Vegetables",
+      "image_url": "[https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Tempeh",
+        "Naturreis",
+        "Erbsen"
+      ],
+      "ingredients_de": [
+        "Tempeh",
+        "Naturreis",
+        "Erbsen"
+      ],
+      "ingredients_en": [
+        "Tempeh",
+        "Brown rice",
+        "Peas"
+      ],
+      "calories": 750,
+      "protein": 34,
+      "carbs": 91,
+      "fat": 28,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.2,
+        "vitamin_c": 46,
+        "vitamin_b12": 0.1,
+        "calcium": 190,
+        "magnesium": 165,
+        "iron": 6.8,
+        "zinc": 4,
+        "omega3": 620,
+        "fiber": 14,
+        "potassium": 1240
+      }
+    },
+    {
+      "id": "l25",
+      "name": "Forelle mit Spargel",
+      "name_de": "Gebratene Forelle mit Spargel und Süßkartoffel",
+      "name_en": "Pan-Fried Trout with Asparagus and Sweet Potato",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Forelle",
+        "Spargel",
+        "Süßkartoffel"
+      ],
+      "ingredients_de": [
+        "Forelle",
+        "Spargel",
+        "Süßkartoffel"
+      ],
+      "ingredients_en": [
+        "Trout",
+        "Asparagus",
+        "Sweet potato"
+      ],
+      "calories": 730,
+      "protein": 46,
+      "carbs": 58,
+      "fat": 35,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "paleo"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 17.5,
+        "vitamin_c": 58,
+        "vitamin_b12": 6.2,
+        "calcium": 150,
+        "magnesium": 125,
+        "iron": 3.7,
+        "zinc": 3.2,
+        "omega3": 3000,
+        "fiber": 12,
+        "potassium": 1580
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "d1",
+      "name": "Gemüsesuppe mit Bohnen",
+      "name_de": "Mediterrane Gemüsesuppe mit weißen Bohnen",
+      "name_en": "Mediterranean Vegetable Soup with White Beans",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Weiße Bohnen",
+        "Tomaten",
+        "Zucchini"
+      ],
+      "ingredients_de": [
+        "Weiße Bohnen",
+        "Tomaten",
+        "Zucchini"
+      ],
+      "ingredients_en": [
+        "White beans",
+        "Tomatoes",
+        "Zucchini"
+      ],
+      "calories": 480,
+      "protein": 22,
+      "carbs": 68,
+      "fat": 14,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 78,
+        "vitamin_b12": 0,
+        "calcium": 160,
+        "magnesium": 135,
+        "iron": 6.2,
+        "zinc": 3.4,
+        "omega3": 380,
+        "fiber": 17,
+        "potassium": 1420
+      }
+    },
+    {
+      "id": "d2",
+      "name": "Ofenlachs mit Brokkoli",
+      "name_de": "Ofenlachs mit Brokkoli und Zitronenkräutern",
+      "name_en": "Baked Salmon with Broccoli and Lemon Herbs",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Lachs",
+        "Brokkoli",
+        "Zitrone"
+      ],
+      "ingredients_de": [
+        "Lachs",
+        "Brokkoli",
+        "Zitrone"
+      ],
+      "ingredients_en": [
+        "Salmon",
+        "Broccoli",
+        "Lemon"
+      ],
+      "calories": 590,
+      "protein": 43,
+      "carbs": 18,
+      "fat": 39,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 19,
+        "vitamin_c": 108,
+        "vitamin_b12": 5.8,
+        "calcium": 145,
+        "magnesium": 115,
+        "iron": 2.8,
+        "zinc": 3.2,
+        "omega3": 3400,
+        "fiber": 8,
+        "potassium": 1260
+      }
+    },
+    {
+      "id": "d3",
+      "name": "Tofu-Gemüse-Curry",
+      "name_de": "Leichtes Tofu-Gemüse-Curry mit Blumenkohlreis",
+      "name_en": "Light Tofu Vegetable Curry with Cauliflower Rice",
+      "image_url": "[https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Naturtofu",
+        "Blumenkohl",
+        "Brokkoli"
+      ],
+      "ingredients_de": [
+        "Naturtofu",
+        "Blumenkohl",
+        "Brokkoli"
+      ],
+      "ingredients_en": [
+        "Firm tofu",
+        "Cauliflower",
+        "Broccoli"
+      ],
+      "calories": 560,
+      "protein": 27,
+      "carbs": 34,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.2,
+        "vitamin_c": 126,
+        "vitamin_b12": 0,
+        "calcium": 340,
+        "magnesium": 155,
+        "iron": 6.5,
+        "zinc": 3.8,
+        "omega3": 600,
+        "fiber": 13,
+        "potassium": 1380
+      }
+    },
+    {
+      "id": "d4",
+      "name": "Hähnchen mit Ratatouille",
+      "name_de": "Gegrilltes Hähnchen mit mediterranem Ratatouille",
+      "name_en": "Grilled Chicken with Mediterranean Ratatouille",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Hähnchenbrust",
+        "Zucchini",
+        "Aubergine"
+      ],
+      "ingredients_de": [
+        "Hähnchenbrust",
+        "Zucchini",
+        "Aubergine"
+      ],
+      "ingredients_en": [
+        "Chicken breast",
+        "Zucchini",
+        "Eggplant"
+      ],
+      "calories": 570,
+      "protein": 50,
+      "carbs": 31,
+      "fat": 28,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.7,
+        "vitamin_c": 112,
+        "vitamin_b12": 1.1,
+        "calcium": 105,
+        "magnesium": 110,
+        "iron": 3.5,
+        "zinc": 4.2,
+        "omega3": 470,
+        "fiber": 11,
+        "potassium": 1460
+      }
+    },
+    {
+      "id": "d5",
+      "name": "Linsen-Bolognese",
+      "name_de": "Linsen-Bolognese mit Vollkornspaghetti",
+      "name_en": "Lentil Bolognese with Whole-Wheat Spaghetti",
+      "image_url": "[https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Rote Linsen",
+        "Vollkornspaghetti",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Rote Linsen",
+        "Vollkornspaghetti",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Red lentils",
+        "Whole-wheat spaghetti",
+        "Tomatoes"
+      ],
+      "calories": 640,
+      "protein": 28,
+      "carbs": 101,
+      "fat": 14,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 48,
+        "vitamin_b12": 0,
+        "calcium": 140,
+        "magnesium": 160,
+        "iron": 8.1,
+        "zinc": 4,
+        "omega3": 390,
+        "fiber": 20,
+        "potassium": 1350
+      }
+    },
+    {
+      "id": "d6",
+      "name": "Zucchini-Nudeln mit Garnelen",
+      "name_de": "Zucchini-Nudeln mit Garnelen und Tomaten",
+      "name_en": "Zucchini Noodles with Shrimp and Tomatoes",
+      "image_url": "[https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Garnelen",
+        "Zucchini",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Garnelen",
+        "Zucchini",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Shrimp",
+        "Zucchini",
+        "Tomatoes"
+      ],
+      "calories": 490,
+      "protein": 40,
+      "carbs": 20,
+      "fat": 29,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "shellfish"
+      ],
+      "nutrients": {
+        "vitamin_d": 1.1,
+        "vitamin_c": 62,
+        "vitamin_b12": 2.6,
+        "calcium": 155,
+        "magnesium": 105,
+        "iron": 3.2,
+        "zinc": 3.3,
+        "omega3": 820,
+        "fiber": 7,
+        "potassium": 1150
+      }
+    },
+    {
+      "id": "d7",
+      "name": "Kichererbsen-Spinat-Pfanne",
+      "name_de": "Kichererbsen-Spinat-Pfanne mit Tomaten",
+      "name_en": "Chickpea Spinach Skillet with Tomatoes",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Kichererbsen",
+        "Spinat",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Kichererbsen",
+        "Spinat",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Chickpeas",
+        "Spinach",
+        "Tomatoes"
+      ],
+      "calories": 530,
+      "protein": 21,
+      "carbs": 65,
+      "fat": 22,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 82,
+        "vitamin_b12": 0,
+        "calcium": 240,
+        "magnesium": 175,
+        "iron": 7.6,
+        "zinc": 4,
+        "omega3": 450,
+        "fiber": 18,
+        "potassium": 1370
+      }
+    },
+    {
+      "id": "d8",
+      "name": "Rindergulasch mit Gemüse",
+      "name_de": "Mageres Rindergulasch mit Paprika und Pilzen",
+      "name_en": "Lean Beef Goulash with Peppers and Mushrooms",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Rindfleisch",
+        "Paprika",
+        "Champignons"
+      ],
+      "ingredients_de": [
+        "Rindfleisch",
+        "Paprika",
+        "Champignons"
+      ],
+      "ingredients_en": [
+        "Beef",
+        "Bell peppers",
+        "Mushrooms"
+      ],
+      "calories": 620,
+      "protein": 48,
+      "carbs": 28,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.5,
+        "vitamin_c": 92,
+        "vitamin_b12": 3.1,
+        "calcium": 90,
+        "magnesium": 105,
+        "iron": 6.4,
+        "zinc": 9,
+        "omega3": 500,
+        "fiber": 8,
+        "potassium": 1280
+      }
+    },
+    {
+      "id": "d9",
+      "name": "Gemüse-Frittata",
+      "name_de": "Gemüse-Frittata mit Spinat und Ziegenkäse",
+      "name_en": "Vegetable Frittata with Spinach and Goat Cheese",
+      "image_url": "[https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Eier",
+        "Spinat",
+        "Zucchini"
+      ],
+      "ingredients_de": [
+        "Eier",
+        "Spinat",
+        "Zucchini"
+      ],
+      "ingredients_en": [
+        "Eggs",
+        "Spinach",
+        "Zucchini"
+      ],
+      "calories": 520,
+      "protein": 30,
+      "carbs": 18,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 6.2,
+        "vitamin_c": 54,
+        "vitamin_b12": 3,
+        "calcium": 340,
+        "magnesium": 95,
+        "iron": 4.6,
+        "zinc": 3.5,
+        "omega3": 520,
+        "fiber": 6,
+        "potassium": 980
+      }
+    },
+    {
+      "id": "d10",
+      "name": "Miso-Lachs-Suppe",
+      "name_de": "Miso-Suppe mit Lachs, Tofu und Pak Choi",
+      "name_en": "Miso Soup with Salmon, Tofu and Pak Choi",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Lachs",
+        "Miso",
+        "Naturtofu"
+      ],
+      "ingredients_de": [
+        "Lachs",
+        "Miso",
+        "Naturtofu"
+      ],
+      "ingredients_en": [
+        "Salmon",
+        "Miso paste",
+        "Firm tofu"
+      ],
+      "calories": 540,
+      "protein": 39,
+      "carbs": 24,
+      "fat": 31,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "fish",
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 15,
+        "vitamin_c": 42,
+        "vitamin_b12": 5,
+        "calcium": 250,
+        "magnesium": 125,
+        "iron": 4.2,
+        "zinc": 3.3,
+        "omega3": 2800,
+        "fiber": 7,
+        "potassium": 1120
+      }
+    },
+    {
+      "id": "d11",
+      "name": "Blumenkohl-Steaks",
+      "name_de": "Blumenkohl-Steaks mit Linsen und Kräutersauce",
+      "name_en": "Cauliflower Steaks with Lentils and Herb Sauce",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Blumenkohl",
+        "Linsen",
+        "Petersilie"
+      ],
+      "ingredients_de": [
+        "Blumenkohl",
+        "Linsen",
+        "Petersilie"
+      ],
+      "ingredients_en": [
+        "Cauliflower",
+        "Lentils",
+        "Parsley"
+      ],
+      "calories": 550,
+      "protein": 24,
+      "carbs": 64,
+      "fat": 24,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 142,
+        "vitamin_b12": 0,
+        "calcium": 230,
+        "magnesium": 170,
+        "iron": 7,
+        "zinc": 4.1,
+        "omega3": 450,
+        "fiber": 19,
+        "potassium": 1490
+      }
+    },
+    {
+      "id": "d12",
+      "name": "Putenbällchen mit Gemüse",
+      "name_de": "Putenbällchen mit Tomatensauce und Zucchini",
+      "name_en": "Turkey Meatballs with Tomato Sauce and Zucchini",
+      "image_url": "[https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Putenhackfleisch",
+        "Zucchini",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Putenhackfleisch",
+        "Zucchini",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Ground turkey",
+        "Zucchini",
+        "Tomatoes"
+      ],
+      "calories": 560,
+      "protein": 45,
+      "carbs": 26,
+      "fat": 31,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.6,
+        "vitamin_c": 58,
+        "vitamin_b12": 1.5,
+        "calcium": 105,
+        "magnesium": 95,
+        "iron": 3.5,
+        "zinc": 4.6,
+        "omega3": 430,
+        "fiber": 8,
+        "potassium": 1240
+      }
+    },
+    {
+      "id": "d13",
+      "name": "Auberginen-Auflauf",
+      "name_de": "Auberginen-Auflauf mit Tomaten und Mozzarella",
+      "name_en": "Eggplant Bake with Tomatoes and Mozzarella",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Aubergine",
+        "Tomaten",
+        "Mozzarella"
+      ],
+      "ingredients_de": [
+        "Aubergine",
+        "Tomaten",
+        "Mozzarella"
+      ],
+      "ingredients_en": [
+        "Eggplant",
+        "Tomatoes",
+        "Mozzarella"
+      ],
+      "calories": 580,
+      "protein": 25,
+      "carbs": 31,
+      "fat": 40,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.7,
+        "vitamin_c": 64,
+        "vitamin_b12": 2,
+        "calcium": 410,
+        "magnesium": 95,
+        "iron": 3.4,
+        "zinc": 3.5,
+        "omega3": 380,
+        "fiber": 11,
+        "potassium": 1180
+      }
+    },
+    {
+      "id": "d14",
+      "name": "Tempeh-Salat",
+      "name_de": "Warmer Tempeh-Salat mit Brokkoli und Avocado",
+      "name_en": "Warm Tempeh Salad with Broccoli and Avocado",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Tempeh",
+        "Brokkoli",
+        "Avocado"
+      ],
+      "ingredients_de": [
+        "Tempeh",
+        "Brokkoli",
+        "Avocado"
+      ],
+      "ingredients_en": [
+        "Tempeh",
+        "Broccoli",
+        "Avocado"
+      ],
+      "calories": 610,
+      "protein": 32,
+      "carbs": 38,
+      "fat": 39,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "soy"
+      ],
+      "nutrients": {
+        "vitamin_d": 0.2,
+        "vitamin_c": 122,
+        "vitamin_b12": 0.1,
+        "calcium": 250,
+        "magnesium": 190,
+        "iron": 6.2,
+        "zinc": 4.4,
+        "omega3": 720,
+        "fiber": 16,
+        "potassium": 1510
+      }
+    },
+    {
+      "id": "d15",
+      "name": "Kabeljau in Tomatensauce",
+      "name_de": "Kabeljau in mediterraner Tomatensauce mit Oliven",
+      "name_en": "Cod in Mediterranean Tomato Sauce with Olives",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Kabeljau",
+        "Tomaten",
+        "Oliven"
+      ],
+      "ingredients_de": [
+        "Kabeljau",
+        "Tomaten",
+        "Oliven"
+      ],
+      "ingredients_en": [
+        "Cod",
+        "Tomatoes",
+        "Olives"
+      ],
+      "calories": 500,
+      "protein": 42,
+      "carbs": 23,
+      "fat": 27,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 7.2,
+        "vitamin_c": 52,
+        "vitamin_b12": 3,
+        "calcium": 110,
+        "magnesium": 90,
+        "iron": 2.9,
+        "zinc": 2.3,
+        "omega3": 920,
+        "fiber": 7,
+        "potassium": 1160
+      }
+    },
+    {
+      "id": "d16",
+      "name": "Süßkartoffel-Bohnen-Chili",
+      "name_de": "Chili mit Süßkartoffel, Bohnen und Mais",
+      "name_en": "Sweet Potato and Bean Chili",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Süßkartoffel",
+        "Kidneybohnen",
+        "Tomaten"
+      ],
+      "ingredients_de": [
+        "Süßkartoffel",
+        "Kidneybohnen",
+        "Tomaten"
+      ],
+      "ingredients_en": [
+        "Sweet potato",
+        "Kidney beans",
+        "Tomatoes"
+      ],
+      "calories": 620,
+      "protein": 22,
+      "carbs": 96,
+      "fat": 17,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 118,
+        "vitamin_b12": 0,
+        "calcium": 160,
+        "magnesium": 165,
+        "iron": 7.4,
+        "zinc": 3.8,
+        "omega3": 440,
+        "fiber": 21,
+        "potassium": 1650
+      }
+    },
+    {
+      "id": "d17",
+      "name": "Hähnchen-Kokos-Suppe",
+      "name_de": "Asiatische Hähnchen-Kokos-Suppe mit Pilzen",
+      "name_en": "Asian Chicken Coconut Soup with Mushrooms",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Hähnchenbrust",
+        "Kokosmilch",
+        "Champignons"
+      ],
+      "ingredients_de": [
+        "Hähnchenbrust",
+        "Kokosmilch",
+        "Champignons"
+      ],
+      "ingredients_en": [
+        "Chicken breast",
+        "Coconut milk",
+        "Mushrooms"
+      ],
+      "calories": 600,
+      "protein": 43,
+      "carbs": 25,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 1,
+        "vitamin_c": 48,
+        "vitamin_b12": 1.2,
+        "calcium": 120,
+        "magnesium": 100,
+        "iron": 3,
+        "zinc": 4,
+        "omega3": 450,
+        "fiber": 7,
+        "potassium": 1190
+      }
+    },
+    {
+      "id": "d18",
+      "name": "Quinoa-Gemüse-Pfanne",
+      "name_de": "Quinoa-Gemüse-Pfanne mit Kichererbsen",
+      "name_en": "Quinoa Vegetable Skillet with Chickpeas",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Quinoa",
+        "Kichererbsen",
+        "Zucchini"
+      ],
+      "ingredients_de": [
+        "Quinoa",
+        "Kichererbsen",
+        "Zucchini"
+      ],
+      "ingredients_en": [
+        "Quinoa",
+        "Chickpeas",
+        "Zucchini"
+      ],
+      "calories": 590,
+      "protein": 23,
+      "carbs": 82,
+      "fat": 20,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 112,
+        "vitamin_b12": 0,
+        "calcium": 220,
+        "magnesium": 210,
+        "iron": 7.8,
+        "zinc": 4.8,
+        "omega3": 480,
+        "fiber": 18,
+        "potassium": 1480
+      }
+    },
+    {
+      "id": "d19",
+      "name": "Forelle mit Gurkensalat",
+      "name_de": "Gebratene Forelle mit Gurken-Dill-Salat",
+      "name_en": "Pan-Fried Trout with Cucumber Dill Salad",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Forelle",
+        "Gurke",
+        "Dill"
+      ],
+      "ingredients_de": [
+        "Forelle",
+        "Gurke",
+        "Dill"
+      ],
+      "ingredients_en": [
+        "Trout",
+        "Cucumber",
+        "Dill"
+      ],
+      "calories": 560,
+      "protein": 43,
+      "carbs": 16,
+      "fat": 36,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 18,
+        "vitamin_c": 30,
+        "vitamin_b12": 6,
+        "calcium": 120,
+        "magnesium": 95,
+        "iron": 2.8,
+        "zinc": 3,
+        "omega3": 3100,
+        "fiber": 4,
+        "potassium": 980
+      }
+    },
+    {
+      "id": "d20",
+      "name": "Brokkoli-Käse-Suppe",
+      "name_de": "Cremige Brokkoli-Käse-Suppe",
+      "name_en": "Creamy Broccoli Cheese Soup",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Brokkoli",
+        "Cheddar",
+        "Sahne"
+      ],
+      "ingredients_de": [
+        "Brokkoli",
+        "Cheddar",
+        "Sahne"
+      ],
+      "ingredients_en": [
+        "Broccoli",
+        "Cheddar cheese",
+        "Cream"
+      ],
+      "calories": 590,
+      "protein": 27,
+      "carbs": 22,
+      "fat": 44,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "pescatarian",
+        "keto"
+      ],
+      "allergens": [
+        "lactose"
+      ],
+      "nutrients": {
+        "vitamin_d": 1.2,
+        "vitamin_c": 118,
+        "vitamin_b12": 1.8,
+        "calcium": 560,
+        "magnesium": 95,
+        "iron": 2.5,
+        "zinc": 4.2,
+        "omega3": 420,
+        "fiber": 8,
+        "potassium": 990
+      }
+    },
+    {
+      "id": "d21",
+      "name": "Thunfisch-Avocado-Salat",
+      "name_de": "Thunfisch-Avocado-Salat mit Ei und Tomaten",
+      "name_en": "Tuna Avocado Salad with Egg and Tomatoes",
+      "image_url": "[https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Thunfisch",
+        "Avocado",
+        "Ei"
+      ],
+      "ingredients_de": [
+        "Thunfisch",
+        "Avocado",
+        "Ei"
+      ],
+      "ingredients_en": [
+        "Tuna",
+        "Avocado",
+        "Egg"
+      ],
+      "calories": 610,
+      "protein": 42,
+      "carbs": 19,
+      "fat": 42,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "nutrients": {
+        "vitamin_d": 9.2,
+        "vitamin_c": 48,
+        "vitamin_b12": 5.6,
+        "calcium": 120,
+        "magnesium": 110,
+        "iron": 3.6,
+        "zinc": 3.2,
+        "omega3": 2100,
+        "fiber": 9,
+        "potassium": 1260
+      }
+    },
+    {
+      "id": "d22",
+      "name": "Seitan-Gemüse-Pfanne",
+      "name_de": "Seitan-Gemüse-Pfanne mit Brokkoli und Paprika",
+      "name_en": "Seitan Vegetable Skillet with Broccoli and Pepper",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Seitan",
+        "Brokkoli",
+        "Paprika"
+      ],
+      "ingredients_de": [
+        "Seitan",
+        "Brokkoli",
+        "Paprika"
+      ],
+      "ingredients_en": [
+        "Seitan",
+        "Broccoli",
+        "Bell pepper"
+      ],
+      "calories": 520,
+      "protein": 42,
+      "carbs": 42,
+      "fat": 21,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 132,
+        "vitamin_b12": 0,
+        "calcium": 150,
+        "magnesium": 105,
+        "iron": 6.8,
+        "zinc": 3.2,
+        "omega3": 380,
+        "fiber": 11,
+        "potassium": 1210
+      }
+    },
+    {
+      "id": "d23",
+      "name": "Lamm-Gemüse-Teller",
+      "name_de": "Gegrilltes Lamm mit Aubergine und Zucchini",
+      "name_en": "Grilled Lamb with Eggplant and Zucchini",
+      "image_url": "[https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Lammfleisch",
+        "Aubergine",
+        "Zucchini"
+      ],
+      "ingredients_de": [
+        "Lammfleisch",
+        "Aubergine",
+        "Zucchini"
+      ],
+      "ingredients_en": [
+        "Lamb",
+        "Eggplant",
+        "Zucchini"
+      ],
+      "calories": 640,
+      "protein": 45,
+      "carbs": 24,
+      "fat": 41,
+      "suitable_for": [
+        "omnivore",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0.8,
+        "vitamin_c": 48,
+        "vitamin_b12": 3.2,
+        "calcium": 95,
+        "magnesium": 100,
+        "iron": 5.6,
+        "zinc": 8.5,
+        "omega3": 500,
+        "fiber": 9,
+        "potassium": 1230
+      }
+    },
+    {
+      "id": "d24",
+      "name": "Spinat-Kichererbsen-Suppe",
+      "name_de": "Spinat-Kichererbsen-Suppe mit Zitrone",
+      "name_en": "Spinach Chickpea Soup with Lemon",
+      "image_url": "[https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Kichererbsen",
+        "Spinat",
+        "Zitrone"
+      ],
+      "ingredients_de": [
+        "Kichererbsen",
+        "Spinat",
+        "Zitrone"
+      ],
+      "ingredients_en": [
+        "Chickpeas",
+        "Spinach",
+        "Lemon"
+      ],
+      "calories": 460,
+      "protein": 20,
+      "carbs": 62,
+      "fat": 15,
+      "suitable_for": [
+        "omnivore",
+        "vegetarian",
+        "vegan",
+        "pescatarian"
+      ],
+      "allergens": [],
+      "nutrients": {
+        "vitamin_d": 0,
+        "vitamin_c": 82,
+        "vitamin_b12": 0,
+        "calcium": 250,
+        "magnesium": 175,
+        "iron": 7.2,
+        "zinc": 3.8,
+        "omega3": 430,
+        "fiber": 18,
+        "potassium": 1390
+      }
+    },
+    {
+      "id": "d25",
+      "name": "Mediterrane Garnelenpfanne",
+      "name_de": "Garnelenpfanne mit Tomaten, Spinat und Oliven",
+      "name_en": "Mediterranean Shrimp Skillet with Tomatoes, Spinach and Olives",
+      "image_url": "[https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Garnelen",
+        "Tomaten",
+        "Spinat"
+      ],
+      "ingredients_de": [
+        "Garnelen",
+        "Tomaten",
+        "Spinat"
+      ],
+      "ingredients_en": [
+        "Shrimp",
+        "Tomatoes",
+        "Spinach"
+      ],
+      "calories": 530,
+      "protein": 42,
+      "carbs": 24,
+      "fat": 31,
+      "suitable_for": [
+        "omnivore",
+        "pescatarian",
+        "keto",
+        "paleo"
+      ],
+      "allergens": [
+        "shellfish"
+      ],
+      "nutrients": {
+        "vitamin_d": 1.2,
+        "vitamin_c": 66,
+        "vitamin_b12": 2.8,
+        "calcium": 210,
+        "magnesium": 125,
+        "iron": 4.4,
+        "zinc": 3.6,
+        "omega3": 880,
+        "fiber": 8,
+        "potassium": 1250
+      }
+    }
+  ]
+}

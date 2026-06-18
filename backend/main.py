@@ -1,14 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.database import engine, Base
+from backend.database import engine, Base, ensure_database_schema
 from backend.routes.auth_routes import router as auth_router
 from backend.routes.questionnaire_routes import router as questionnaire_router
 from backend.routes.supplement_routes import router as supplement_router
 from backend.routes.health_routes import router as health_router
+from backend.routes.meal_routes import router as meal_router
 
 # Create tables
 Base.metadata.create_all(bind=engine)
+ensure_database_schema()
 
 app = FastAPI(
     title="NutriMatch API",
@@ -30,6 +32,7 @@ app.include_router(auth_router)
 app.include_router(questionnaire_router)
 app.include_router(supplement_router)
 app.include_router(health_router)
+app.include_router(meal_router)
 
 
 @app.get("/api/health-check")

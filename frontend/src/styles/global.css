@@ -473,6 +473,424 @@ body {
   font-size: 0.85rem;
 }
 
+/* Shopping List — Top Picks */
+.shopping-list {
+  background: var(--primary-dark);
+  color: white;
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.shopping-list-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.shopping-list-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.shopping-list-icon {
+  font-size: 1.4rem;
+}
+
+.shopping-list-subtitle {
+  font-size: 0.85rem;
+  color: var(--accent-light);
+  margin-bottom: 1.25rem;
+}
+
+.shopping-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.shopping-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.shopping-list-item:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateX(4px);
+}
+
+.shopping-item-info h4 {
+  color: white;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.shopping-item-info p {
+  color: var(--accent-light);
+  font-size: 0.8rem;
+}
+
+.shopping-item-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.shopping-item-score {
+  background: var(--accent);
+  color: white;
+  padding: 0.25rem 0.65rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.shopping-item-arrow {
+  font-size: 1.2rem;
+  color: var(--accent-light);
+  transition: transform 0.2s;
+}
+
+.shopping-list-item:hover .shopping-item-arrow {
+  transform: translateX(3px);
+}
+
+/* Meal Plan Section */
+.meal-plan-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1px solid var(--accent-light);
+  border-radius: var(--radius);
+}
+
+.meal-plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.meal-plan-header h3 {
+  font-size: 1.15rem;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.meal-plan-date {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 0.25rem;
+}
+
+.meal-plan-calories {
+  text-align: right;
+}
+
+.meal-plan-calories .cal-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+  line-height: 1;
+}
+
+.meal-plan-calories .cal-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.meal-plan-calories .cal-target {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+.meal-calorie-note {
+  margin: -0.5rem 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--text-light);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.meal-calorie-formula {
+  margin: -0.5rem 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.meal-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .meal-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.meal-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.meal-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--primary);
+  color: white;
+}
+
+.meal-card-header h4 {
+  flex: 1;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.meal-icon {
+  font-size: 1.1rem;
+}
+
+.meal-cal {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.meal-image {
+  height: 120px;
+  overflow: hidden;
+}
+
+.meal-image.is-hidden {
+  display: none;
+}
+
+.meal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meal-name {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.meal-ingredients {
+  padding: 0 1rem 0.75rem;
+}
+
+.meal-section-label {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.meal-ingredient-note {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  line-height: 1.3;
+}
+
+.meal-ingredient-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.meal-ingredient-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 24px;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-light);
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.meal-ingredient-chip strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.meal-serving {
+  padding: 0 1rem 0.75rem;
+  margin-top: -0.4rem;
+  font-size: 0.72rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.meal-macros {
+  padding: 0 1rem 0.75rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.meal-nutrients {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.meal-nutrient-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nutrient-label {
+  font-size: 0.7rem;
+  color: var(--text-light);
+  min-width: 60px;
+}
+
+.nutrient-bar-track {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.nutrient-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.nutrient-pct {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--primary);
+  min-width: 48px;
+  text-align: right;
+}
+
+/* Daily Summary */
+.meal-daily-summary {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+}
+
+.meal-daily-summary h4 {
+  color: var(--primary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.daily-nutrients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem;
+}
+
+.daily-nutrient-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.daily-nutrient-item.deficient .dn-pct {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.daily-nutrient-item.good .dn-pct {
+  color: var(--primary);
+}
+
+.dn-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  min-width: 75px;
+}
+
+.dn-bar-track {
+  flex: 1;
+  height: 5px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dn-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+.daily-nutrient-item.deficient .dn-bar-fill {
+  background: #dc3545;
+}
+
+.dn-pct {
+  font-size: 0.7rem;
+  min-width: 30px;
+  text-align: right;
+  color: var(--text-muted);
+}
+
+.meal-deficiency-note {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: var(--radius-sm);
+}
+
+.meal-deficiency-note p {
+  font-size: 0.85rem;
+  color: #664d03;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.deficiency-list {
+  font-size: 0.8rem;
+  color: #664d03;
+}
+
 /* Supplement Comparison */
 .supplements-page {
   padding: 3rem 2rem;

@@ -49,6 +49,7 @@ class QuestionnaireSubmit(BaseModel):
     allergies: list[str] = []
     preferred_form: Optional[str] = None
     budget_monthly: Optional[float] = None
+    food_budget_monthly: Optional[float] = None
     prefer_organic: bool = False
     prefer_fairtrade: bool = False
     existing_conditions: list[str] = []
@@ -71,6 +72,7 @@ class SupplementResponse(BaseModel):
     price: Optional[float]
     currency: str
     shop_name: Optional[str]
+    shop_url: Optional[str]
     is_vegan: bool
     is_organic: bool
     evidence_level: Optional[str]

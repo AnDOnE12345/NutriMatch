@@ -27,6 +27,7 @@ export default function Questionnaire() {
     allergies: [],
     preferred_form: 'capsule',
     budget_monthly: 50,
+    food_budget_monthly: 300,
     prefer_organic: false,
     prefer_fairtrade: false,
     existing_conditions: [],
@@ -57,6 +58,7 @@ export default function Questionnaire() {
         meals_per_day: parseInt(form.meals_per_day),
         water_intake_liters: parseFloat(form.water_intake_liters),
         budget_monthly: parseFloat(form.budget_monthly),
+        food_budget_monthly: parseFloat(form.food_budget_monthly),
       }
       await api.post('/questionnaire/submit', payload)
       navigate('/dashboard')
@@ -189,6 +191,10 @@ export default function Questionnaire() {
       <div className="form-group">
         <label>{t('questionnaire.budget')}</label>
         <input type="number" value={form.budget_monthly} onChange={(e) => updateField('budget_monthly', e.target.value)} min="10" max="500" />
+      </div>
+      <div className="form-group">
+        <label>{t('questionnaire.food_budget')}</label>
+        <input type="number" value={form.food_budget_monthly} onChange={(e) => updateField('food_budget_monthly', e.target.value)} min="50" max="2000" step="50" />
       </div>
       <div className="form-group">
         <label className="checkbox-item" style={{ display: 'inline-flex' }}>
