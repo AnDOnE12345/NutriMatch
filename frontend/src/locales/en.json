@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Home",
+    "questionnaire": "Questionnaire",
+    "dashboard": "Dashboard",
+    "supplements": "Supplements",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Your Personal Supplement Recommendation",
+    "subtitle": "Data-driven. Cross-brand. Individual.",
+    "description": "NutriMatch analyzes your health data, lifestyle and goals – and finds the best supplements from different brands for you.",
+    "cta": "Get Started",
+    "cta_secondary": "Learn More"
+  },
+  "features": {
+    "title": "Why NutriMatch?",
+    "personalized": {
+      "title": "Personalized",
+      "description": "Based on your questionnaire, wearable data and optional lab results."
+    },
+    "cross_brand": {
+      "title": "Cross-Brand",
+      "description": "We compare products from different providers – not just one brand."
+    },
+    "transparent": {
+      "title": "Transparent",
+      "description": "Every recommendation is backed by scientific sources and expert knowledge."
+    },
+    "adaptive": {
+      "title": "Adaptive",
+      "description": "Your recommendations adapt when your lifestyle or data changes."
+    }
+  },
+  "how_it_works": {
+    "title": "How It Works",
+    "step1": {
+      "title": "Fill Out Questionnaire",
+      "description": "Answer questions about health, diet, allergies and goals."
+    },
+    "step2": {
+      "title": "Connect Data",
+      "description": "Optionally connect your smartwatch or fitness app for better recommendations."
+    },
+    "step3": {
+      "title": "Get Recommendations",
+      "description": "Receive an individual supplement plan with price comparison."
+    },
+    "step4": {
+      "title": "Regular Updates",
+      "description": "Your recommendations are automatically updated when your data changes."
+    }
+  },
+  "questionnaire": {
+    "title": "Personal Questionnaire",
+    "subtitle": "Answer the following questions for your individual recommendation.",
+    "basic_info": "Basic Info",
+    "lifestyle": "Lifestyle",
+    "diet": "Diet",
+    "goals": "Goals",
+    "preferences": "Preferences",
+    "age": "Age",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "diverse": "Diverse",
+    "height": "Height (cm)",
+    "weight": "Weight (kg)",
+    "activity_level": "Activity Level",
+    "sedentary": "Sedentary",
+    "light": "Lightly Active",
+    "moderate": "Moderately Active",
+    "active": "Active",
+    "very_active": "Very Active",
+    "sleep_hours": "Sleep Hours Per Night",
+    "stress_level": "Stress Level",
+    "low": "Low",
+    "high": "High",
+    "diet_type": "Diet Type",
+    "omnivore": "Omnivore",
+    "vegetarian": "Vegetarian",
+    "vegan": "Vegan",
+    "pescatarian": "Pescatarian",
+    "keto": "Keto",
+    "paleo": "Paleo",
+    "goals_select": "What do you want to improve?",
+    "goal_energy": "Energy",
+    "goal_sleep": "Sleep",
+    "goal_immunity": "Immune System",
+    "goal_muscle": "Muscle Building",
+    "goal_weight_loss": "Weight Loss",
+    "goal_skin_hair": "Skin & Hair",
+    "goal_digestion": "Digestion",
+    "goal_stress": "Stress Relief",
+    "goal_focus": "Focus",
+    "goal_joints": "Joints",
+    "allergies": "Allergies & Intolerances",
+    "allergy_gluten": "Gluten",
+    "allergy_lactose": "Lactose",
+    "allergy_soy": "Soy",
+    "allergy_nuts": "Nuts",
+    "allergy_fish": "Fish",
+    "allergy_shellfish": "Shellfish",
+    "preferred_form": "Preferred Form",
+    "capsule": "Capsule",
+    "tablet": "Tablet",
+    "powder": "Powder",
+    "liquid": "Liquid",
+    "gummy": "Gummy",
+    "budget": "Monthly Budget (€)",
+    "prefer_organic": "Prefer Organic",
+    "prefer_fairtrade": "Prefer Fairtrade",
+    "submit": "Submit Questionnaire",
+    "next": "Next",
+    "back": "Back"
+  },
+  "dashboard": {
+    "title": "Your Dashboard",
+    "recommendations": "Your Recommendations",
+    "generate": "Generate New Recommendation",
+    "no_recommendations": "No recommendations yet. Please fill out the questionnaire first.",
+    "score": "Matching Score",
+    "reasoning": "Reasoning",
+    "supplement_list": "Recommended Supplements",
+    "view_details": "View Details",
+    "health_data": "Health Data",
+    "connect_device": "Connect Device"
+  },
+  "supplements": {
+    "title": "Supplement Comparison",
+    "filter": "Filter",
+    "category": "Category",
+    "all": "All",
+    "vitamins": "Vitamins",
+    "minerals": "Minerals",
+    "herbal": "Herbal",
+    "omega": "Omega-3",
+    "amino_acids": "Amino Acids",
+    "probiotics": "Probiotics",
+    "price": "Price",
+    "brand": "Brand",
+    "evidence": "Evidence",
+    "vegan_only": "Vegan Only",
+    "organic_only": "Organic Only",
+    "per_month": "/ month",
+    "buy_now": "Go to Shop",
+    "add_to_plan": "Add to My Plan"
+  },
+  "auth": {
+    "login_title": "Login",
+    "register_title": "Create Account",
+    "email": "Email Address",
+    "password": "Password",
+    "full_name": "Full Name",
+    "login_btn": "Login",
+    "register_btn": "Register",
+    "no_account": "Don't have an account?",
+    "has_account": "Already have an account?",
+    "register_link": "Register now",
+    "login_link": "Login"
+  },
+  "footer": {
+    "disclaimer": "NutriMatch does not provide medical diagnoses. The platform serves as data-based support for choosing dietary supplements.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact"
+  }
+}

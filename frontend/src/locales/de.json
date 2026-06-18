@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "questionnaire": "Fragebogen",
+    "dashboard": "Dashboard",
+    "supplements": "Supplements",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "logout": "Abmelden"
+  },
+  "hero": {
+    "title": "Deine persönliche Supplement-Empfehlung",
+    "subtitle": "Datenbasiert. Markenübergreifend. Individuell.",
+    "description": "NutriMatch analysiert deine Gesundheitsdaten, deinen Lebensstil und deine Ziele – und findet die besten Supplements aus verschiedenen Marken für dich.",
+    "cta": "Jetzt starten",
+    "cta_secondary": "Mehr erfahren"
+  },
+  "features": {
+    "title": "Warum NutriMatch?",
+    "personalized": {
+      "title": "Personalisiert",
+      "description": "Basierend auf deinem Fragebogen, Wearable-Daten und optionalen Laborwerten."
+    },
+    "cross_brand": {
+      "title": "Markenübergreifend",
+      "description": "Wir vergleichen Produkte verschiedener Anbieter – nicht nur eine Marke."
+    },
+    "transparent": {
+      "title": "Transparent",
+      "description": "Jede Empfehlung wird mit wissenschaftlichen Quellen und Expertenwissen begründet."
+    },
+    "adaptive": {
+      "title": "Adaptiv",
+      "description": "Deine Empfehlungen passen sich an, wenn sich dein Lebensstil oder deine Daten ändern."
+    }
+  },
+  "how_it_works": {
+    "title": "So funktioniert es",
+    "step1": {
+      "title": "Fragebogen ausfüllen",
+      "description": "Beantworte Fragen zu Gesundheit, Ernährung, Allergien und Zielen."
+    },
+    "step2": {
+      "title": "Daten verbinden",
+      "description": "Verbinde optional deine Smartwatch oder Fitness-App für bessere Empfehlungen."
+    },
+    "step3": {
+      "title": "Empfehlungen erhalten",
+      "description": "Erhalte eine individuelle Supplement-Zusammenstellung mit Preisvergleich."
+    },
+    "step4": {
+      "title": "Regelmäßig anpassen",
+      "description": "Deine Empfehlungen werden automatisch aktualisiert, wenn sich deine Daten ändern."
+    }
+  },
+  "questionnaire": {
+    "title": "Persönlicher Fragebogen",
+    "subtitle": "Beantworte die folgenden Fragen für deine individuelle Empfehlung.",
+    "basic_info": "Grunddaten",
+    "lifestyle": "Lebensstil",
+    "diet": "Ernährung",
+    "goals": "Ziele",
+    "preferences": "Präferenzen",
+    "age": "Alter",
+    "gender": "Geschlecht",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "diverse": "Divers",
+    "height": "Größe (cm)",
+    "weight": "Gewicht (kg)",
+    "activity_level": "Aktivitätslevel",
+    "sedentary": "Sitzend",
+    "light": "Leicht aktiv",
+    "moderate": "Moderat aktiv",
+    "active": "Aktiv",
+    "very_active": "Sehr aktiv",
+    "sleep_hours": "Schlafstunden pro Nacht",
+    "stress_level": "Stresslevel",
+    "low": "Niedrig",
+    "high": "Hoch",
+    "diet_type": "Ernährungstyp",
+    "omnivore": "Mischkost",
+    "vegetarian": "Vegetarisch",
+    "vegan": "Vegan",
+    "pescatarian": "Pescetarisch",
+    "keto": "Keto",
+    "paleo": "Paleo",
+    "goals_select": "Was möchtest du verbessern?",
+    "goal_energy": "Energie",
+    "goal_sleep": "Schlaf",
+    "goal_immunity": "Immunsystem",
+    "goal_muscle": "Muskelaufbau",
+    "goal_weight_loss": "Gewichtsabnahme",
+    "goal_skin_hair": "Haut & Haare",
+    "goal_digestion": "Verdauung",
+    "goal_stress": "Stressabbau",
+    "goal_focus": "Konzentration",
+    "goal_joints": "Gelenke",
+    "allergies": "Allergien & Unverträglichkeiten",
+    "allergy_gluten": "Gluten",
+    "allergy_lactose": "Laktose",
+    "allergy_soy": "Soja",
+    "allergy_nuts": "Nüsse",
+    "allergy_fish": "Fisch",
+    "allergy_shellfish": "Schalentiere",
+    "preferred_form": "Bevorzugte Darreichungsform",
+    "capsule": "Kapsel",
+    "tablet": "Tablette",
+    "powder": "Pulver",
+    "liquid": "Flüssig",
+    "gummy": "Gummibärchen",
+    "budget": "Monatliches Budget (€)",
+    "prefer_organic": "Bio bevorzugt",
+    "prefer_fairtrade": "Fairtrade bevorzugt",
+    "submit": "Fragebogen absenden",
+    "next": "Weiter",
+    "back": "Zurück"
+  },
+  "dashboard": {
+    "title": "Dein Dashboard",
+    "recommendations": "Deine Empfehlungen",
+    "generate": "Neue Empfehlung generieren",
+    "no_recommendations": "Noch keine Empfehlungen. Fülle zuerst den Fragebogen aus.",
+    "score": "Matching-Score",
+    "reasoning": "Begründung",
+    "supplement_list": "Empfohlene Supplements",
+    "view_details": "Details ansehen",
+    "health_data": "Gesundheitsdaten",
+    "connect_device": "Gerät verbinden"
+  },
+  "supplements": {
+    "title": "Supplement-Vergleich",
+    "filter": "Filter",
+    "category": "Kategorie",
+    "all": "Alle",
+    "vitamins": "Vitamine",
+    "minerals": "Mineralstoffe",
+    "herbal": "Pflanzlich",
+    "omega": "Omega-3",
+    "amino_acids": "Aminosäuren",
+    "probiotics": "Probiotika",
+    "price": "Preis",
+    "brand": "Marke",
+    "evidence": "Evidenz",
+    "vegan_only": "Nur vegan",
+    "organic_only": "Nur Bio",
+    "per_month": "/ Monat",
+    "buy_now": "Zum Shop",
+    "add_to_plan": "Zu meinem Plan"
+  },
+  "auth": {
+    "login_title": "Anmelden",
+    "register_title": "Konto erstellen",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "full_name": "Vollständiger Name",
+    "login_btn": "Anmelden",
+    "register_btn": "Registrieren",
+    "no_account": "Noch kein Konto?",
+    "has_account": "Bereits ein Konto?",
+    "register_link": "Jetzt registrieren",
+    "login_link": "Anmelden"
+  },
+  "footer": {
+    "disclaimer": "NutriMatch stellt keine medizinische Diagnose. Die Plattform dient als datenbasierte Unterstützung bei der Auswahl von Nahrungsergänzungsmitteln.",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "contact": "Kontakt"
+  }
+}
