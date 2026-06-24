@@ -7,6 +7,8 @@ import Register from './pages/Register'
 import Questionnaire from './pages/Questionnaire'
 import Dashboard from './pages/Dashboard'
 import Supplements from './pages/Supplements'
+import WearableDashboard from './pages/WearableDashboard'
+import ChatAssistant from './components/ChatAssistant'
 
 export default function App() {
   return (
@@ -20,8 +22,10 @@ export default function App() {
           <Route path="/questionnaire" element={<Questionnaire />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/supplements" element={<Supplements />} />
+          <Route path="/health/watch/:eventId" element={<WearableDashboard />} />
         </Routes>
       </main>
+      <ChatAssistant />
       <Footer />
     </div>
   )

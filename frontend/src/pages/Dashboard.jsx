@@ -9,6 +9,11 @@ export default function Dashboard() {
   const [recommendations, setRecommendations] = useState([])
   const [loading, setLoading] = useState(false)
   const [mealPlan, setMealPlan] = useState(null)
+  const [healthAnalysis, setHealthAnalysis] = useState(null)
+  const [nfcWaiting, setNfcWaiting] = useState(false)
+  const [nfcDevice] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('nfcDevice')) } catch { return null }
+  })
 
   useEffect(() => {
     if (!localStorage.getItem('token')) {
@@ -17,7 +22,34 @@ export default function Dashboard() {
     }
     fetchRecommendations()
     fetchMealPlan()
+    fetchHealthAnalysis()
   }, [])
+
+  useEffect(() => {
+    if (!localStorage.getItem('token')) return undefined
+    let stopped = false
+
+    const checkForNfcTap = async () => {
+      try {
+        const after = localStorage.getItem('lastNfcEvent') || undefined
+        const res = await api.get('/health/nfc/events/latest', { params: { after } })
+        const event = res.data?.event
+        if (!stopped && event) {
+          localStorage.setItem('lastNfcEvent', event.id)
+          navigate(`/health/watch/${event.id}`)
+        }
+      } catch {
+        // NFC is optional; keep the rest of the dashboard quiet if it is unavailable.
+      }
+    }
+
+    checkForNfcTap()
+    const interval = window.setInterval(checkForNfcTap, 1000)
+    return () => {
+      stopped = true
+      window.clearInterval(interval)
+    }
+  }, [navigate])
 
   const fetchRecommendations = async () => {
     try {
@@ -34,6 +66,36 @@ export default function Dashboard() {
       setMealPlan(res.data)
     } catch (err) {
       console.error('Failed to fetch meal plan')
+    }
+  }
+
+  const fetchHealthAnalysis = async () => {
+    try {
+      const res = await api.get('/health/data')
+      const days = res.data
+        .filter((entry) => entry.source === 'nfc_demo_watch' && entry.data_type === 'wearable_daily_summary')
+        .map((entry) => entry.value)
+        .filter(Boolean)
+        .sort((a, b) => a.date.localeCompare(b.date))
+        .slice(-14)
+
+      if (days.length < 7) {
+        setHealthAnalysis(null)
+        return
+      }
+
+      const average = (items, key) => items.reduce((sum, item) => sum + Number(item[key] || 0), 0) / items.length
+      const avgSleep = average(days, 'sleep_hours')
+      const avgSteps = Math.round(average(days, 'steps'))
+      const avgActive = Math.round(average(days, 'active_minutes'))
+      const avgResting = Math.round(average(days, 'resting_heart_rate'))
+      const recentWeek = days.slice(-7)
+      const previousWeek = days.slice(-14, -7)
+      const restingDelta = average(recentWeek, 'resting_heart_rate') - average(previousWeek, 'resting_heart_rate')
+
+      setHealthAnalysis({ avgSleep, avgSteps, avgActive, avgResting, restingDelta, days: days.length })
+    } catch {
+      setHealthAnalysis(null)
     }
   }
 
@@ -105,6 +167,64 @@ export default function Dashboard() {
       maximumFractionDigits: 1
     }).format(value)
   )
+
+  const formatSleepDuration = (value) => {
+    const hours = Math.floor(value)
+    const minutes = Math.round((value - hours) * 60)
+    return lang === 'de' ? `${hours} Std. ${minutes} Min.` : `${hours} h ${minutes} min`
+  }
+
+  const getHealthInsights = () => {
+    if (!healthAnalysis) return []
+    const { avgSleep, avgSteps, avgActive, avgResting, restingDelta } = healthAnalysis
+    const weeklyActive = avgActive * 7
+    const extraMinutes = Math.max(10, Math.ceil((150 - weeklyActive) / 35) * 5)
+
+    const sleepInsight = avgSleep < 7
+      ? {
+          icon: '☾', tone: 'attention', title: lang === 'de' ? 'Schlaf verbessern' : 'Improve sleep',
+          metric: `Ø ${formatSleepDuration(avgSleep)}`,
+          text: lang === 'de'
+            ? `Du schläfst im Durchschnitt weniger als 7 Stunden. Versuche, deine Schlafdauer schrittweise um ${Math.min(60, Math.max(15, Math.round((7 - avgSleep) * 60 / 15) * 15))} Minuten zu erhöhen.`
+            : `Your average is below 7 hours. Try gradually adding ${Math.min(60, Math.max(15, Math.round((7 - avgSleep) * 60 / 15) * 15))} minutes of sleep.`,
+        }
+      : {
+          icon: '☾', tone: 'positive', title: lang === 'de' ? 'Erholsamer Schlaf' : 'Restorative sleep',
+          metric: `Ø ${formatSleepDuration(avgSleep)}`,
+          text: lang === 'de' ? 'Deine durchschnittliche Schlafdauer liegt in einem guten Bereich. Behalte deinen regelmäßigen Rhythmus bei.' : 'Your average sleep duration is in a good range. Keep your schedule consistent.',
+        }
+
+    const activityInsight = weeklyActive < 150
+      ? {
+          icon: '↟', tone: 'attention', title: lang === 'de' ? 'Mehr Bewegung im Alltag' : 'Move more during the day',
+          metric: `Ø ${avgSteps.toLocaleString(lang === 'de' ? 'de-DE' : 'en-US')} ${lang === 'de' ? 'Schritte' : 'steps'}`,
+          text: lang === 'de' ? `Im Schnitt sammelst du ${avgActive} aktive Minuten pro Tag. Etwa ${extraMinutes} zusätzliche Minuten Bewegung täglich wären ein realistischer nächster Schritt.` : `You average ${avgActive} active minutes per day. About ${extraMinutes} extra minutes of daily movement is a realistic next step.`,
+        }
+      : {
+          icon: '↟', tone: 'positive', title: lang === 'de' ? 'Aktivitätsziel erreicht' : 'Activity target reached',
+          metric: `Ø ${avgSteps.toLocaleString(lang === 'de' ? 'de-DE' : 'en-US')} ${lang === 'de' ? 'Schritte' : 'steps'}`,
+          text: lang === 'de' ? `Mit etwa ${weeklyActive} aktiven Minuten pro Woche erreichst du ein solides Aktivitätsniveau. Bleib möglichst regelmäßig in Bewegung.` : `At about ${weeklyActive} active minutes per week, you maintain a solid activity level. Keep it consistent.`,
+        }
+
+    let recoveryText
+    let recoveryTone = 'stable'
+    let recoveryTitle = lang === 'de' ? 'Stabile Erholung' : 'Stable recovery'
+    if (restingDelta > 3) {
+      recoveryTone = 'attention'
+      recoveryTitle = lang === 'de' ? 'Erholung beobachten' : 'Watch your recovery'
+      recoveryText = lang === 'de' ? `Dein Ruhepuls lag in den letzten 7 Tagen etwa ${Math.round(restingDelta)} BPM über der Vorwoche. Plane etwas mehr Erholung ein und beobachte den Trend.` : `Your resting heart rate was about ${Math.round(restingDelta)} BPM higher than the previous week. Allow more recovery and watch the trend.`
+    } else if (restingDelta < -2) {
+      recoveryTone = 'positive'
+      recoveryTitle = lang === 'de' ? 'Positive Erholungstendenz' : 'Positive recovery trend'
+      recoveryText = lang === 'de' ? `Dein durchschnittlicher Ruhepuls ist gegenüber der Vorwoche um ${Math.abs(Math.round(restingDelta))} BPM gesunken.` : `Your average resting heart rate decreased by ${Math.abs(Math.round(restingDelta))} BPM compared with the previous week.`
+    } else {
+      recoveryText = lang === 'de' ? 'Dein Ruhepuls blieb über die letzten zwei Wochen stabil. Es wurden keine auffälligen Veränderungen erkannt.' : 'Your resting heart rate remained stable over the last two weeks. No notable changes were detected.'
+    }
+
+    return [sleepInsight, activityInsight, {
+      icon: '♥', tone: recoveryTone, title: recoveryTitle, metric: `Ø ${avgResting} BPM`, text: recoveryText,
+    }]
+  }
 
   const formatNutrientAmount = (info) => (
     `${formatNumber(info.actual)} ${info.unit}`
@@ -222,6 +342,30 @@ export default function Dashboard() {
   return (
     <div className="dashboard">
       <h1>{t('dashboard.title')}</h1>
+
+      {healthAnalysis && (
+        <section className="health-analysis">
+          <div className="health-analysis-header">
+            <div>
+              <span className="eyebrow">NUTRIMATCH INSIGHT</span>
+              <h2>{lang === 'de' ? 'Deine Gesundheitsanalyse' : 'Your health analysis'}</h2>
+              <p>{lang === 'de' ? `Auswertung deiner letzten ${healthAnalysis.days} Tage mit der NutriMatch Demo Watch.` : `Analysis of your last ${healthAnalysis.days} days with the NutriMatch Demo Watch.`}</p>
+            </div>
+            <span className="analysis-demo-badge">{lang === 'de' ? 'Simulierte Demodaten' : 'Simulated demo data'}</span>
+          </div>
+          <div className="health-insight-grid">
+            {getHealthInsights().map((insight) => (
+              <article className={`health-insight-card ${insight.tone}`} key={insight.title}>
+                <span className="health-insight-icon">{insight.icon}</span>
+                <div><span className="insight-status-dot" /><h3>{insight.title}</h3></div>
+                <strong>{insight.metric}</strong>
+                <p>{insight.text}</p>
+              </article>
+            ))}
+          </div>
+          <p className="health-analysis-note">{lang === 'de' ? 'Hinweis: Diese Wellness-Auswertung ersetzt keine medizinische Beratung oder Diagnose.' : 'Note: This wellness analysis does not replace medical advice or diagnosis.'}</p>
+        </section>
+      )}
 
       <div className="dashboard-grid">
         {/* Recommendations Panel */}
@@ -365,7 +509,27 @@ export default function Dashboard() {
           <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
             Smartwatch & Fitness-App Integration
           </p>
-          <button className="btn btn-secondary">{t('dashboard.connect_device')}</button>
+          {nfcDevice && (
+            <div className="dashboard-device-status">
+              <button
+                className="device-status-icon"
+                type="button"
+                title={lang === 'de' ? 'Gesundheitsdaten öffnen' : 'Open health data'}
+                aria-label={lang === 'de' ? 'Gesundheitsdaten öffnen' : 'Open health data'}
+                onClick={() => navigate('/health/watch/latest')}
+              >⌚</button>
+              <div><strong>{nfcDevice.name}</strong><small><i /> NFC verbunden · Akku {nfcDevice.battery}%</small></div>
+            </div>
+          )}
+          {nfcWaiting && (
+            <div className="nfc-waiting-message">
+              <span className="nfc-rings">)))</span>
+              <div><strong>Bereit für NFC</strong><small>Halte dein Smartphone an den NutriMatch Tag.</small></div>
+            </div>
+          )}
+          <button className="btn btn-secondary" onClick={() => setNfcWaiting((value) => !value)}>
+            {nfcWaiting ? 'Warten beenden' : t('dashboard.connect_device')}
+          </button>
         </div>
 
         {/* Quick Actions */}

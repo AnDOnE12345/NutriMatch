@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
 from datetime import datetime
 
@@ -61,6 +61,17 @@ class HealthDataSubmit(BaseModel):
     data_type: str
     value: dict
     recorded_at: Optional[datetime] = None
+
+
+class ChatHistoryItem(BaseModel):
+    role: str = Field(pattern="^(user|assistant)$")
+    content: str = Field(min_length=1, max_length=2500)
+
+
+class ChatRequest(BaseModel):
+    message: str = Field(min_length=1, max_length=800)
+    provider: str = Field(default="local", pattern="^(local|gemini|groq)$")
+    history: list[ChatHistoryItem] = Field(default_factory=list, max_length=8)
 
 
 class SupplementResponse(BaseModel):

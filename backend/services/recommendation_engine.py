@@ -253,12 +253,24 @@ def generate_recommendations(user: User, db: Session) -> Recommendation:
         HealthData.user_id == user.id
     ).order_by(HealthData.recorded_at.desc()).limit(30).all()
 
+    wearable_sleep = []
     for entry in health_data:
         if entry.data_type == "sleep" and entry.value:
             avg_sleep = entry.value.get("hours", 7)
             if avg_sleep < 6:
                 needed_nutrients.update(["magnesium", "melatonin", "l_theanine"])
                 reasoning["sleep_data"] = "Low sleep detected: adding sleep support supplements"
+        elif entry.data_type == "wearable_daily_summary" and entry.value:
+            wearable_sleep.append(entry.value.get("sleep_hours", 7))
+
+    if wearable_sleep:
+        avg_wearable_sleep = sum(wearable_sleep) / len(wearable_sleep)
+        if avg_wearable_sleep < 6.5:
+            needed_nutrients.update(["magnesium", "melatonin", "l_theanine"])
+            reasoning["sleep_data"] = (
+                f"Wearable-Daten: durchschnittlich {avg_wearable_sleep:.1f} Stunden Schlaf "
+                "– Schlafunterstützung wurde berücksichtigt"
+            )
 
     # Build preferences dict
     preferences = {

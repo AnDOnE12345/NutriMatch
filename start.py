@@ -29,7 +29,10 @@ def start_backend():
     print("💡 Run 'cd frontend && npm install && npm run dev' for the React frontend")
     print("-" * 50)
     subprocess.run(
-        [sys.executable, "-m", "uvicorn", "backend.main:app", "--reload", "--port", "8000"],
+        [
+            sys.executable, "-m", "uvicorn", "backend.main:app",
+            "--reload", "--host", "0.0.0.0", "--port", "8000",
+        ],
         cwd=BASE_DIR,
     )
 
