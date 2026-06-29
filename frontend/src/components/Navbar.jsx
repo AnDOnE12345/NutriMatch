@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import nutrimatchLogo from '../assets/nutrimatch_logo_cropped.png'
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
@@ -20,8 +21,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <Link to="/" className="logo">
-          <span className="logo-icon">🧬</span>
-          NutriMatch
+          <img src={nutrimatchLogo} alt="NutriMatch" className="logo-image" />
         </Link>
 
         <ul className="nav-links">

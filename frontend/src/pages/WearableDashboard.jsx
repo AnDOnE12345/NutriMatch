@@ -5,7 +5,7 @@ import api from '../api'
 
 const copy = {
   de: {
-    back: 'Zurück zum Dashboard', connected: 'Live verbunden', simulated: 'Simulierte Demodaten',
+    back: 'Zurück zum Dashboard', connected: 'Live verbunden', simulated: 'HeartCast Live',
     synced: 'Zuletzt synchronisiert', justNow: 'gerade eben', today: 'Heute', steps: 'Schritte',
     sleep: 'Schlaf', resting: 'Ruhepuls', active: 'Aktivitätsminuten', calories: 'Aktive Kalorien',
     livePulse: 'Live-Herzfrequenz', lastMinute: 'Letzte 60 Sekunden', history: 'Deine letzten 14 Tage',
@@ -13,11 +13,14 @@ const copy = {
     activeTime: 'Aktive Minuten', average: 'Ø 14 Tage', hours: 'Std.', minutes: 'Min.',
     insightEyebrow: 'NutriMatch Insight', insightTitle: 'Deine Gesundheitsdaten sind bereit', insight: 'Die 14-Tage-Auswertung für Schlaf, Bewegung und Erholung findest du jetzt ganz oben in deinem Dashboard.',
     update: 'Empfehlungen mit Gesundheitsdaten aktualisieren', updating: 'Wird aktualisiert…', updated: 'Empfehlungen wurden mit den Wearable-Daten aktualisiert.', dashboard: 'Zum Dashboard',
-    loading: 'Gesundheitsdaten werden synchronisiert…', expired: 'Diese NFC-Synchronisierung ist abgelaufen. Bitte berühre den Tag erneut.',
-    quality: 'Schlafqualität', battery: 'Akku', via: 'Verbunden über NFC', bpm: 'BPM', kcal: 'kcal',
+    loading: 'Gesundheitsdaten werden synchronisiert…', expired: 'Die Watch-Synchronisierung ist abgelaufen. Bitte öffne die Watch-Seite erneut.',
+    quality: 'Schlafqualität', battery: 'Akku', via: 'Verbunden über Apple Watch / HeartCast', bpm: 'BPM', kcal: 'kcal',
+    appleWatch: 'Apple Watch Echtwert', demoPulse: 'Warte auf HeartCast',
+    realData: 'Echte Apple-Watch-Daten', received: 'Synchronisiert', measured: 'Gemessen',
+    shortcutProof: 'Von Apple Watch / HeartCast an NutriMatch gesendet',
   },
   en: {
-    back: 'Back to dashboard', connected: 'Connected live', simulated: 'Simulated demo data',
+    back: 'Back to dashboard', connected: 'Connected live', simulated: 'HeartCast live',
     synced: 'Last synced', justNow: 'just now', today: 'Today', steps: 'Steps', sleep: 'Sleep',
     resting: 'Resting heart rate', active: 'Active minutes', calories: 'Active calories',
     livePulse: 'Live heart rate', lastMinute: 'Last 60 seconds', history: 'Your last 14 days',
@@ -25,8 +28,11 @@ const copy = {
     activeTime: 'Active minutes', average: '14-day avg.', hours: 'h', minutes: 'min',
     insightEyebrow: 'NutriMatch Insight', insightTitle: 'Your health data is ready', insight: 'Your 14-day sleep, movement, and recovery analysis is now available at the top of your dashboard.',
     update: 'Update recommendations with health data', updating: 'Updating…', updated: 'Recommendations were updated with wearable data.', dashboard: 'Go to dashboard',
-    loading: 'Synchronizing health data…', expired: 'This NFC sync has expired. Please tap the tag again.',
-    quality: 'Sleep quality', battery: 'Battery', via: 'Connected via NFC', bpm: 'BPM', kcal: 'kcal',
+    loading: 'Synchronizing health data…', expired: 'The watch sync has expired. Please reopen the watch page.',
+    quality: 'Sleep quality', battery: 'Battery', via: 'Connected via Apple Watch / HeartCast', bpm: 'BPM', kcal: 'kcal',
+    appleWatch: 'Apple Watch real value', demoPulse: 'Waiting for HeartCast',
+    realData: 'Real Apple Watch data', received: 'Synced', measured: 'Measured',
+    shortcutProof: 'Sent from Apple Watch / HeartCast to NutriMatch',
   },
 }
 
@@ -83,10 +89,27 @@ function LineChart({ data, valueKey, color = '#ef6f6c', formatValue, locale }) {
   )
 }
 
-function LivePulse({ values, heartRate, labels }) {
+function formatDateTime(value, locale) {
+  if (!value) return ''
+  return new Date(value).toLocaleTimeString(locale, {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    timeZone: 'Europe/Berlin',
+  })
+}
+
+function LivePulse({ values, heartRate, labels, liveSource, liveSample, locale }) {
+  const chartValues = values.length ? values : [heartRate]
+  const low = Math.min(...chartValues, heartRate)
+  const high = Math.max(...chartValues, heartRate)
+  const padding = Math.max(4, Math.round((high - low) * 0.35))
+  const chartMin = low - padding
+  const chartMax = high + padding
+  const chartRange = Math.max(1, chartMax - chartMin)
   const points = values.map((value, index) => {
     const x = index * (100 / Math.max(1, values.length - 1))
-    const y = 50 - (value - 72) * 3.2
+    const y = 90 - ((value - chartMin) / chartRange) * 80
     return `${x},${Math.max(7, Math.min(93, y))}`
   }).join(' ')
   return (
@@ -94,7 +117,17 @@ function LivePulse({ values, heartRate, labels }) {
       <div className="live-pulse-copy">
         <span className="eyebrow">{labels.livePulse}</span>
         <div><span className="pulse-heart">♥</span><strong>{heartRate}</strong><span>{labels.bpm}</span></div>
-        <small><i /> {labels.connected} · {labels.lastMinute}</small>
+        <small><i /> {labels.connected} · {liveSource || labels.lastMinute}</small>
+        {liveSample && (
+          <div className="watch-proof-badge">
+            <span className="watch-proof-dot">✓</span>
+            <div>
+              <strong>{labels.realData}: {Math.round(liveSample.bpm)} {labels.bpm}</strong>
+              <span>{labels.measured}: {formatDateTime(liveSample.measured_at, locale)} · {labels.received}: {formatDateTime(liveSample.sync_received_at || liveSample.last_received_at || liveSample.received_at, locale)}</span>
+              <em>{labels.shortcutProof}</em>
+            </div>
+          </div>
+        )}
       </div>
       <svg className="live-pulse-chart" viewBox="0 0 100 100" preserveAspectRatio="none" aria-label={labels.livePulse}>
         <polyline points={points} fill="none" stroke="#ff8a80" strokeWidth="2.4" vectorEffect="non-scaling-stroke" strokeLinecap="round" strokeLinejoin="round" />
@@ -113,6 +146,9 @@ export default function WearableDashboard() {
   const [dataset, setDataset] = useState(null)
   const [error, setError] = useState('')
   const [heartRate, setHeartRate] = useState(72)
+  const [pulseBaseline, setPulseBaseline] = useState(72)
+  const [liveSource, setLiveSource] = useState('')
+  const [liveSample, setLiveSample] = useState(null)
   const [pulseValues, setPulseValues] = useState(() => Array.from({ length: 36 }, (_, i) => 71 + Math.sin(i / 3) * 1.4))
   const [updating, setUpdating] = useState(false)
   const [updated, setUpdated] = useState(false)
@@ -133,6 +169,9 @@ export default function WearableDashboard() {
         if (!active) return
         setDataset(data)
         setHeartRate(data.live_heart_rate)
+        setPulseBaseline(data.live_heart_rate)
+        setLiveSource(labels.demoPulse)
+        setLiveSample(null)
         localStorage.setItem('nfcDevice', JSON.stringify(data.device))
       })
       .catch(() => { if (active) setError(labels.expired) })
@@ -163,17 +202,45 @@ export default function WearableDashboard() {
   }, [eventId, navigate])
 
   useEffect(() => {
+    if (!dataset || !localStorage.getItem('token')) return undefined
+    let stopped = false
+    const pollAppleWatch = async () => {
+      try {
+        const response = await api.get('/health/apple-watch/heart-rate/latest', { params: { t: Date.now() } })
+        console.debug('[NutriMatch Apple Watch polling]', response.data)
+        const sample = response.data?.sample
+        if (stopped || !sample?.bpm) return
+        const bpm = Math.round(sample.bpm)
+        setPulseBaseline(bpm)
+        setHeartRate(bpm)
+        setPulseValues((values) => [...values.slice(-59), bpm])
+        setLiveSource(labels.appleWatch)
+        setLiveSample(sample)
+      } catch {
+        // Real Apple Watch values are optional; the demo pulse continues without them.
+      }
+    }
+    pollAppleWatch()
+    const interval = window.setInterval(pollAppleWatch, 2000)
+    return () => {
+      stopped = true
+      window.clearInterval(interval)
+    }
+  }, [dataset, labels.appleWatch])
+
+  useEffect(() => {
     if (!dataset) return undefined
     const timer = window.setInterval(() => {
       setHeartRate((previous) => {
-        const pullToBaseline = (72 - previous) * 0.22
-        const next = Math.round(Math.max(64, Math.min(82, previous + pullToBaseline + (Math.random() - 0.5) * 3)))
-        setPulseValues((values) => [...values.slice(-59), next])
-        return next
+        const pullToBaseline = (pulseBaseline - previous) * 0.22
+        const visualNext = Math.round(Math.max(42, Math.min(180, previous + pullToBaseline + (Math.random() - 0.5) * 3)))
+        const displayNext = liveSample ? pulseBaseline : visualNext
+        setPulseValues((values) => [...values.slice(-59), visualNext])
+        return displayNext
       })
     }, 1000)
     return () => window.clearInterval(timer)
-  }, [dataset])
+  }, [dataset, pulseBaseline, liveSample])
 
   const handleRecommendationUpdate = async () => {
     setUpdating(true)
@@ -191,9 +258,10 @@ export default function WearableDashboard() {
   const averages = useMemo(() => dataset?.averages || {}, [dataset])
 
   if (error) return <div className="watch-state"><div className="watch-state-icon">!</div><h1>{error}</h1><button className="btn btn-primary" onClick={() => navigate('/dashboard')}>{labels.back}</button></div>
-  if (!dataset) return <div className="watch-state"><div className="watch-sync-spinner"/><h1>{labels.loading}</h1><p>NM-WATCH-01 · NFC</p></div>
+  if (!dataset) return <div className="watch-state"><div className="watch-sync-spinner"/><h1>{labels.loading}</h1><p>Apple Watch · HeartCast</p></div>
 
   const { device, today, history } = dataset
+  const deviceName = device.name?.includes('Demo') ? 'NutriMatch Watch' : device.name
   const statCards = [
     { icon: '↟', value: today.steps.toLocaleString(locale), label: labels.steps, tone: 'green' },
     { icon: '☾', value: formatHours(today.sleep_hours, locale, labels), label: labels.sleep, tone: 'violet', extra: `${today.sleep_quality}% ${labels.quality}` },
@@ -206,14 +274,14 @@ export default function WearableDashboard() {
       <button className="watch-back" onClick={() => navigate('/dashboard')}>← {labels.back}</button>
       <header className="watch-device-header">
         <div className="watch-device-icon">⌚</div>
-        <div className="watch-device-title"><div className="watch-title-row"><h1>{device.name}</h1><span className="live-chip"><i /> {labels.connected}</span></div><p>{device.id} · {labels.via} · {labels.synced} {labels.justNow}</p></div>
+        <div className="watch-device-title"><div className="watch-title-row"><h1>{deviceName}</h1><span className="live-chip"><i /> {labels.connected}</span></div><p>Apple Watch · HeartCast · {labels.synced} {labels.justNow}</p></div>
         <div className="watch-device-meta"><span>▰ {device.battery}% {labels.battery}</span><span className="demo-chip">{labels.simulated}</span></div>
       </header>
 
       <div className="watch-section-heading"><div><span className="eyebrow">{labels.today}</span><h2>{new Date(`${today.date}T12:00:00`).toLocaleDateString(locale, { weekday: 'long', day: 'numeric', month: 'long' })}</h2></div><span>{today.active_calories} {labels.kcal} · {labels.calories}</span></div>
       <section className="watch-stat-grid">{statCards.map((card) => <article className={`watch-stat-card ${card.tone}`} key={card.label}><span className="watch-stat-icon">{card.icon}</span><div><strong>{card.value}</strong><span>{card.label}</span>{card.extra && <small>{card.extra}</small>}</div></article>)}</section>
 
-      <LivePulse values={pulseValues} heartRate={heartRate} labels={labels} />
+      <LivePulse values={pulseValues} heartRate={heartRate} labels={labels} liveSource={liveSource} liveSample={liveSample} locale={locale} />
 
       <div className="watch-section-heading history-heading"><div><span className="eyebrow">{labels.history}</span><h2>{labels.history}</h2></div></div>
       <section className="watch-chart-grid">

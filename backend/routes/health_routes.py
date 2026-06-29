@@ -1,31 +1,62 @@
 import hashlib
 import hmac
 import html
+import logging
 import os
 import random
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from threading import Lock
 from uuid import uuid4
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import Response
 from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session
 
 from backend.database import get_db
 from backend.models import User, HealthData
-from backend.schemas import HealthDataSubmit
+from backend.schemas import AppleWatchHeartRateSubmit, HealthDataSubmit
+from backend.config import APPLE_WATCH_DEMO_TOKEN
 from backend.routes.auth_routes import get_current_user
 
 router = APIRouter(prefix="/api/health", tags=["health"])
+logger = logging.getLogger("nutrimatch.apple_watch")
 
 NFC_DEMO_TOKEN = os.getenv("NFC_DEMO_TOKEN", "nutrimatch-demo-2026")
 NFC_EVENT_TTL = timedelta(minutes=10)
 _nfc_events: list[dict] = []
 _nfc_lock = Lock()
+APPLE_WATCH_SAMPLE_TTL = timedelta(minutes=15)
+_apple_watch_samples: list[dict] = []
+_apple_watch_last_sync: dict | None = None
+_apple_watch_lock = Lock()
 
 
 def _clamp(value, minimum, maximum):
     return max(minimum, min(maximum, value))
+
+
+def _utc_now() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def _as_utc(value: datetime) -> datetime:
+    if value.tzinfo is None:
+        return value.replace(tzinfo=timezone.utc)
+    return value.astimezone(timezone.utc)
+
+
+def _apple_watch_sample_key(source: str, measured_at: datetime, bpm: int) -> tuple[str, str, int]:
+    return (source.strip().lower(), _as_utc(measured_at).isoformat(), bpm)
+
+
+def _serialize_apple_watch_sample(sample: dict) -> dict:
+    return {
+        **sample,
+        "measured_at": _as_utc(sample["measured_at"]).isoformat(),
+        "received_at": _as_utc(sample["received_at"]).isoformat(),
+        "last_received_at": _as_utc(sample.get("last_received_at", sample["received_at"])).isoformat(),
+    }
 
 
 def _generate_watch_history(device_id: str) -> list[dict]:
@@ -96,6 +127,38 @@ def _get_nfc_event(event_id: str) -> dict | None:
     with _nfc_lock:
         _nfc_events[:] = [event for event in _nfc_events if event["created_at"] >= cutoff]
         return next((event.copy() for event in _nfc_events if event["id"] == event_id), None)
+
+
+def _latest_apple_watch_sample() -> dict | None:
+    cutoff = _utc_now() - APPLE_WATCH_SAMPLE_TTL
+    with _apple_watch_lock:
+        global _apple_watch_last_sync
+        _apple_watch_samples[:] = [
+            sample for sample in _apple_watch_samples
+            if _as_utc(sample.get("last_received_at", sample["received_at"])) >= cutoff
+        ]
+        if not _apple_watch_samples:
+            _apple_watch_last_sync = None
+            return None
+        sample = max(
+            _apple_watch_samples,
+            key=lambda item: (
+                _as_utc(item["measured_at"]),
+                _as_utc(item.get("last_received_at", item["received_at"])),
+                item["id"],
+            ),
+        )
+        latest = _serialize_apple_watch_sample(sample.copy())
+        if _apple_watch_last_sync:
+            latest["sync_received_at"] = _as_utc(_apple_watch_last_sync["received_at"]).isoformat()
+            latest["last_post"] = {
+                "bpm": _apple_watch_last_sync["bpm"],
+                "measured_at": _as_utc(_apple_watch_last_sync["measured_at"]).isoformat(),
+                "received_at": _as_utc(_apple_watch_last_sync["received_at"]).isoformat(),
+                "source": _apple_watch_last_sync["source"],
+                "duplicate": _apple_watch_last_sync["duplicate"],
+            }
+        return latest
 
 
 @router.get("/nfc/tap", response_class=HTMLResponse)
@@ -218,6 +281,88 @@ def get_latest_nfc_device(
     device_id = history[-1].get("device_id", "NM-WATCH-01")
     synced_at = latest_entry.created_at or latest_entry.recorded_at or datetime.utcnow()
     return _watch_payload(history, device_id, synced_at)
+
+
+@router.post("/apple-watch/heart-rate")
+def receive_apple_watch_heart_rate(
+    payload: AppleWatchHeartRateSubmit,
+    token: str = Query(default=""),
+):
+    """Receive the latest heart-rate sample from an iPhone Shortcut/Kurzbefehl."""
+    global _apple_watch_last_sync
+    if not hmac.compare_digest(token, APPLE_WATCH_DEMO_TOKEN):
+        raise HTTPException(status_code=403, detail="Ungültiger Apple-Watch-Demo-Token")
+
+    now = _utc_now()
+    measured_at = _as_utc(payload.measured_at or now)
+    bpm = round(payload.bpm)
+    source = payload.source or "Apple Watch"
+    sample_key = _apple_watch_sample_key(source, measured_at, bpm)
+    sample = {
+        "id": uuid4().hex,
+        "bpm": bpm,
+        "source": source,
+        "measured_at": measured_at,
+        "received_at": now,
+        "last_received_at": now,
+        "sync_count": 1,
+    }
+
+    with _apple_watch_lock:
+        existing = next(
+            (
+                item for item in _apple_watch_samples
+                if _apple_watch_sample_key(item["source"], item["measured_at"], item["bpm"]) == sample_key
+            ),
+            None,
+        )
+        duplicate = existing is not None
+        if existing:
+            existing["last_received_at"] = now
+            existing["sync_count"] = existing.get("sync_count", 1) + 1
+            stored_sample = existing
+            action = "updated_duplicate"
+        else:
+            _apple_watch_samples.append(sample)
+            stored_sample = sample
+            action = "created_new"
+        del _apple_watch_samples[:-60]
+        _apple_watch_last_sync = {
+            "bpm": bpm,
+            "source": source,
+            "measured_at": measured_at,
+            "received_at": now,
+            "duplicate": duplicate,
+            "action": action,
+        }
+
+    logger.warning(
+        "[TEMP Apple Watch POST] bpm=%s measured_at=%s source=%s received_at=%s action=%s duplicate=%s",
+        bpm,
+        measured_at.isoformat(),
+        source,
+        now.isoformat(),
+        action,
+        duplicate,
+    )
+
+    return {
+        "status": "duplicate_updated" if duplicate else "saved",
+        "action": action,
+        "duplicate": duplicate,
+        "sample": _serialize_apple_watch_sample(stored_sample.copy()),
+    }
+
+
+@router.get("/apple-watch/heart-rate/latest")
+def get_latest_apple_watch_heart_rate(
+    response: Response,
+    current_user: User = Depends(get_current_user),
+):
+    """Expose the latest received Apple Watch heart-rate value to the logged-in demo UI."""
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+    return {"sample": _latest_apple_watch_sample(), "server_time": _utc_now().isoformat()}
 
 
 @router.post("/data")

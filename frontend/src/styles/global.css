@@ -55,17 +55,18 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  flex: 0 0 auto;
 }
 
-.logo-icon {
-  font-size: 1.8rem;
+.logo-image {
+  display: block;
+  width: clamp(150px, 18vw, 230px);
+  height: auto;
+  max-height: 54px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -1166,7 +1167,7 @@ body {
   font-weight: 500;
 }
 
-/* NFC demo watch */
+/* Watch / HeartCast integration */
 .dashboard-device-status,
 .nfc-waiting-message {
   display: flex;
@@ -1465,6 +1466,62 @@ body {
 
 .live-pulse-copy small { color: #b7d8c5; }
 .live-pulse-chart { width: 100%; height: 120px; overflow: visible; }
+
+.watch-proof-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  width: min(100%, 360px);
+  margin-top: 0.9rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgba(157, 225, 187, 0.45);
+  border-radius: 15px;
+  background: rgba(216, 243, 220, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.watch-proof-dot {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #9de1bb;
+  color: #173f33;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.watch-proof-badge div {
+  min-width: 0;
+}
+
+.watch-proof-badge strong,
+.watch-proof-badge span,
+.watch-proof-badge em {
+  display: block;
+}
+
+.watch-proof-badge strong {
+  color: #ffffff;
+  font-size: 0.88rem;
+  line-height: 1.25;
+}
+
+.watch-proof-badge span {
+  margin-top: 0.18rem;
+  color: #ccebd8;
+  font-size: 0.72rem;
+}
+
+.watch-proof-badge em {
+  margin-top: 0.2rem;
+  color: #9de1bb;
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 700;
+}
 
 .history-heading { margin-bottom: 1.1rem; }
 .history-heading .eyebrow { display: none; }

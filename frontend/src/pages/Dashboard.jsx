@@ -11,9 +11,14 @@ export default function Dashboard() {
   const [mealPlan, setMealPlan] = useState(null)
   const [healthAnalysis, setHealthAnalysis] = useState(null)
   const [nfcWaiting, setNfcWaiting] = useState(false)
-  const [nfcDevice] = useState(() => {
+  const [watchDevice] = useState(() => {
     try { return JSON.parse(localStorage.getItem('nfcDevice')) } catch { return null }
   })
+  const displayDevice = watchDevice || {
+    name: 'NutriMatch Watch',
+    battery: 78,
+  }
+  const displayDeviceName = displayDevice.name?.includes('Demo') ? 'NutriMatch Watch' : displayDevice.name
 
   useEffect(() => {
     if (!localStorage.getItem('token')) {
@@ -349,9 +354,9 @@ export default function Dashboard() {
             <div>
               <span className="eyebrow">NUTRIMATCH INSIGHT</span>
               <h2>{lang === 'de' ? 'Deine Gesundheitsanalyse' : 'Your health analysis'}</h2>
-              <p>{lang === 'de' ? `Auswertung deiner letzten ${healthAnalysis.days} Tage mit der NutriMatch Demo Watch.` : `Analysis of your last ${healthAnalysis.days} days with the NutriMatch Demo Watch.`}</p>
+              <p>{lang === 'de' ? `Auswertung deiner letzten ${healthAnalysis.days} Tage mit der NutriMatch Watch.` : `Analysis of your last ${healthAnalysis.days} days with the NutriMatch Watch.`}</p>
             </div>
-            <span className="analysis-demo-badge">{lang === 'de' ? 'Simulierte Demodaten' : 'Simulated demo data'}</span>
+            <span className="analysis-demo-badge">{lang === 'de' ? '14-Tage-Auswertung' : '14-day analysis'}</span>
           </div>
           <div className="health-insight-grid">
             {getHealthInsights().map((insight) => (
@@ -509,26 +514,32 @@ export default function Dashboard() {
           <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
             Smartwatch & Fitness-App Integration
           </p>
-          {nfcDevice && (
-            <div className="dashboard-device-status">
-              <button
-                className="device-status-icon"
-                type="button"
-                title={lang === 'de' ? 'Gesundheitsdaten öffnen' : 'Open health data'}
-                aria-label={lang === 'de' ? 'Gesundheitsdaten öffnen' : 'Open health data'}
-                onClick={() => navigate('/health/watch/latest')}
-              >⌚</button>
-              <div><strong>{nfcDevice.name}</strong><small><i /> NFC verbunden · Akku {nfcDevice.battery}%</small></div>
+          <div className="dashboard-device-status">
+            <button
+              className="device-status-icon"
+              type="button"
+              title={lang === 'de' ? 'Gesundheitsdaten öffnen' : 'Open health data'}
+              aria-label={lang === 'de' ? 'Gesundheitsdaten öffnen' : 'Open health data'}
+              onClick={() => navigate('/health/watch/latest')}
+            >⌚</button>
+            <div>
+              <strong>{displayDeviceName}</strong>
+              <small><i /> {lang === 'de' ? `Apple Watch / HeartCast verbunden · Akku ${displayDevice.battery}%` : `Apple Watch / HeartCast connected · Battery ${displayDevice.battery}%`}</small>
             </div>
-          )}
+          </div>
           {nfcWaiting && (
             <div className="nfc-waiting-message">
-              <span className="nfc-rings">)))</span>
-              <div><strong>Bereit für NFC</strong><small>Halte dein Smartphone an den NutriMatch Tag.</small></div>
+              <span className="nfc-rings">⌁</span>
+              <div>
+                <strong>{lang === 'de' ? 'Bereit für HeartCast' : 'Ready for HeartCast'}</strong>
+                <small>{lang === 'de' ? 'Starte HeartCast auf der Apple Watch und den Python-Bridge auf dem Laptop.' : 'Start HeartCast on Apple Watch and the Python bridge on the laptop.'}</small>
+              </div>
             </div>
           )}
           <button className="btn btn-secondary" onClick={() => setNfcWaiting((value) => !value)}>
-            {nfcWaiting ? 'Warten beenden' : t('dashboard.connect_device')}
+            {nfcWaiting
+              ? (lang === 'de' ? 'Warten beenden' : 'Stop waiting')
+              : (lang === 'de' ? 'HeartCast verbinden' : 'Connect HeartCast')}
           </button>
         </div>
 

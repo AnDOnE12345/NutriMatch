@@ -1,4 +1,6 @@
-from pydantic import BaseModel, EmailStr, Field
+import re
+
+from pydantic import BaseModel, EmailStr, Field, field_validator
 from typing import Optional
 from datetime import datetime
 
@@ -61,6 +63,21 @@ class HealthDataSubmit(BaseModel):
     data_type: str
     value: dict
     recorded_at: Optional[datetime] = None
+
+
+class AppleWatchHeartRateSubmit(BaseModel):
+    bpm: float = Field(ge=35, le=220)
+    measured_at: Optional[datetime] = None
+    source: str = Field(default="Apple Watch", max_length=80)
+
+    @field_validator("bpm", mode="before")
+    @classmethod
+    def parse_bpm_value(cls, value):
+        if isinstance(value, str):
+            match = re.search(r"\d+(?:[,.]\d+)?", value)
+            if match:
+                return float(match.group(0).replace(",", "."))
+        return value
 
 
 class ChatHistoryItem(BaseModel):
