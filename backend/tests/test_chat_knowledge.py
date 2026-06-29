@@ -25,9 +25,9 @@ class SupplementKnowledgeTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(catalog_keys, set(mapped_keys))
         self.assertEqual(len(mapped_keys), len(set(mapped_keys)))
 
-    def test_alias_retrieval_supports_catalog_and_russian_names(self):
+    def test_alias_retrieval_supports_catalog_and_common_names(self):
         self.assertEqual(select_knowledge_entries("Wann Magnesium einnehmen?")[0]["id"], "magnesium")
-        self.assertEqual(select_knowledge_entries("Когда принимать витамин D?")[0]["id"], "vitamin_d")
+        self.assertEqual(select_knowledge_entries("When should I take vitamin D3?")[0]["id"], "vitamin_d")
 
     def test_intake_reply_contains_curated_sources(self):
         reply = grounded_intake_reply("Soll ich Eisen vor oder nach dem Essen einnehmen?")

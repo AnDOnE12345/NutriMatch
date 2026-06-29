@@ -4,407 +4,1019 @@
   "language": "de",
   "scope": "Allgemeine Einnahmehinweise für die im NutriMatch-Demokatalog verwendeten Wirkstoffe. Keine individuelle Dosierungs- oder Therapieempfehlung.",
   "sources": {
-    "nih_vitamin_d": {"title": "Vitamin D – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"},
-    "nih_omega3": {"title": "Omega-3 Fatty Acids – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"},
-    "nih_magnesium": {"title": "Magnesium – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"},
-    "nih_b12": {"title": "Vitamin B12 – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"},
-    "nih_zinc": {"title": "Zinc – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"},
-    "nih_vitamin_c": {"title": "Vitamin C – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"},
-    "nih_iron": {"title": "Iron – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"},
-    "nhs_iron": {"title": "How and when to take ferrous sulfate", "organization": "NHS", "url": "https://www.nhs.uk/medicines/ferrous-sulfate/how-and-when-to-take-ferrous-sulfate/"},
-    "nih_calcium": {"title": "Calcium – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"},
-    "nih_vitamin_a": {"title": "Vitamin A and Carotenoids – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"},
-    "nih_vitamin_e": {"title": "Vitamin E – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/"},
-    "nih_vitamin_k": {"title": "Vitamin K – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"},
-    "nih_folate": {"title": "Folate – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"},
-    "nih_potassium": {"title": "Potassium – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/"},
-    "nih_carnitine": {"title": "Carnitine – Fact Sheet for Health Professionals", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional/"},
-    "nih_performance": {"title": "Dietary Supplements for Exercise and Athletic Performance", "organization": "NIH Office of Dietary Supplements", "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/"},
-    "nccih_ashwagandha": {"title": "Ashwagandha: Usefulness and Safety", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/ashwagandha"},
-    "nccih_probiotics": {"title": "Probiotics: Usefulness and Safety", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/probiotics-usefulness-and-safety"},
-    "nccih_melatonin": {"title": "Melatonin: What You Need To Know", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"},
-    "nhs_melatonin": {"title": "How and when to take melatonin", "organization": "NHS", "url": "https://www.nhs.uk/medicines/melatonin/how-and-when-to-take-melatonin/"},
-    "nccih_turmeric": {"title": "Turmeric: Usefulness and Safety", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/turmeric"},
-    "nccih_ginger": {"title": "Ginger: Usefulness and Safety", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/ginger"},
-    "nccih_rhodiola": {"title": "Rhodiola: Usefulness and Safety", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/rhodiola"},
-    "nccih_joint": {"title": "Glucosamine and Chondroitin for Osteoarthritis", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis-what-you-need-to-know"},
-    "nccih_grape_seed": {"title": "Grape Seed Extract: Usefulness and Safety", "organization": "NCCIH", "url": "https://www.nccih.nih.gov/health/grape-seed-extract"},
-    "issn_creatine": {"title": "ISSN position stand: safety and efficacy of creatine supplementation", "organization": "Journal of the International Society of Sports Nutrition", "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0173-z"},
-    "issn_protein": {"title": "ISSN position stand: protein and exercise", "organization": "Journal of the International Society of Sports Nutrition", "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8"},
-    "internal_catalog": {"title": "NutriMatch-Demokatalog: Produktangaben und Etikett-Dosierungen", "organization": "NutriMatch", "url": null}
+    "nih_vitamin_d": {
+      "title": "Vitamin D – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+    },
+    "nih_omega3": {
+      "title": "Omega-3 Fatty Acids – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+    },
+    "nih_magnesium": {
+      "title": "Magnesium – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+    },
+    "nih_b12": {
+      "title": "Vitamin B12 – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+    },
+    "nih_zinc": {
+      "title": "Zinc – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+    },
+    "nih_vitamin_c": {
+      "title": "Vitamin C – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+    },
+    "nih_iron": {
+      "title": "Iron – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+    },
+    "nhs_iron": {
+      "title": "How and when to take ferrous sulfate",
+      "organization": "NHS",
+      "url": "https://www.nhs.uk/medicines/ferrous-sulfate/how-and-when-to-take-ferrous-sulfate/"
+    },
+    "nih_calcium": {
+      "title": "Calcium – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+    },
+    "nih_vitamin_a": {
+      "title": "Vitamin A and Carotenoids – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+    },
+    "nih_vitamin_e": {
+      "title": "Vitamin E – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/"
+    },
+    "nih_vitamin_k": {
+      "title": "Vitamin K – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+    },
+    "nih_folate": {
+      "title": "Folate – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"
+    },
+    "nih_potassium": {
+      "title": "Potassium – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/"
+    },
+    "nih_carnitine": {
+      "title": "Carnitine – Fact Sheet for Health Professionals",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional/"
+    },
+    "nih_performance": {
+      "title": "Dietary Supplements for Exercise and Athletic Performance",
+      "organization": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/"
+    },
+    "nccih_ashwagandha": {
+      "title": "Ashwagandha: Usefulness and Safety",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/ashwagandha"
+    },
+    "nccih_probiotics": {
+      "title": "Probiotics: Usefulness and Safety",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/probiotics-usefulness-and-safety"
+    },
+    "nccih_melatonin": {
+      "title": "Melatonin: What You Need To Know",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know"
+    },
+    "nhs_melatonin": {
+      "title": "How and when to take melatonin",
+      "organization": "NHS",
+      "url": "https://www.nhs.uk/medicines/melatonin/how-and-when-to-take-melatonin/"
+    },
+    "nccih_turmeric": {
+      "title": "Turmeric: Usefulness and Safety",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/turmeric"
+    },
+    "nccih_ginger": {
+      "title": "Ginger: Usefulness and Safety",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/ginger"
+    },
+    "nccih_rhodiola": {
+      "title": "Rhodiola: Usefulness and Safety",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/rhodiola"
+    },
+    "nccih_joint": {
+      "title": "Glucosamine and Chondroitin for Osteoarthritis",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis-what-you-need-to-know"
+    },
+    "nccih_grape_seed": {
+      "title": "Grape Seed Extract: Usefulness and Safety",
+      "organization": "NCCIH",
+      "url": "https://www.nccih.nih.gov/health/grape-seed-extract"
+    },
+    "issn_creatine": {
+      "title": "ISSN position stand: safety and efficacy of creatine supplementation",
+      "organization": "Journal of the International Society of Sports Nutrition",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0173-z"
+    },
+    "issn_protein": {
+      "title": "ISSN position stand: protein and exercise",
+      "organization": "Journal of the International Society of Sports Nutrition",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8"
+    },
+    "internal_catalog": {
+      "title": "NutriMatch-Demokatalog: Produktangaben und Etikett-Dosierungen",
+      "organization": "NutriMatch",
+      "url": null
+    }
   },
   "entries": [
     {
       "id": "vitamin_d",
       "display_name": "Vitamin D / D3",
-      "ingredient_keys": ["vitamin_d", "vitamin_d3", "cholecalciferol"],
-      "aliases": ["vitamin d", "vitamin d3", "cholecalciferol", "витамин d", "витамин d3"],
+      "ingredient_keys": [
+        "vitamin_d",
+        "vitamin_d3",
+        "cholecalciferol"
+      ],
+      "aliases": [
+        "vitamin d",
+        "vitamin d3",
+        "cholecalciferol"
+      ],
       "guidance_available": true,
       "with_food": "Mit einer Mahlzeit einnehmen; etwas Fett in der Mahlzeit unterstützt die Aufnahme des fettlöslichen Vitamins.",
       "time_of_day": "Kein allgemein belegter Vorteil für morgens oder abends. Eine konstante, zum Etikett passende Routine ist wichtiger.",
-      "interactions": ["Orlistat kann die Aufnahme vermindern.", "Kortikosteroide können den Vitamin-D-Stoffwechsel beeinflussen.", "Thiazid-Diuretika können zusammen mit Vitamin D das Risiko einer Hyperkalzämie erhöhen."],
-      "contraindications": ["Bei Hyperkalzämie, Nierensteinen, Nierenerkrankung oder granulomatösen Erkrankungen nur nach ärztlicher Rücksprache.", "Hochdosierte Depotprodukte nicht eigenständig häufiger einnehmen als auf dem Etikett angegeben."],
-      "source_ids": ["nih_vitamin_d", "internal_catalog"]
+      "interactions": [
+        "Orlistat kann die Aufnahme vermindern.",
+        "Kortikosteroide können den Vitamin-D-Stoffwechsel beeinflussen.",
+        "Thiazid-Diuretika können zusammen mit Vitamin D das Risiko einer Hyperkalzämie erhöhen."
+      ],
+      "contraindications": [
+        "Bei Hyperkalzämie, Nierensteinen, Nierenerkrankung oder granulomatösen Erkrankungen nur nach ärztlicher Rücksprache.",
+        "Hochdosierte Depotprodukte nicht eigenständig häufiger einnehmen als auf dem Etikett angegeben."
+      ],
+      "source_ids": [
+        "nih_vitamin_d",
+        "internal_catalog"
+      ]
     },
     {
       "id": "omega3",
       "display_name": "Omega-3 (EPA/DHA, Fisch- oder Algenöl)",
-      "ingredient_keys": ["omega3", "epa", "dha", "fish_oil", "algae_oil"],
-      "aliases": ["omega 3", "omega-3", "epa", "dha", "fish oil", "algenöl", "fischöl", "омега 3", "рыбий жир"],
+      "ingredient_keys": [
+        "omega3",
+        "epa",
+        "dha",
+        "fish_oil",
+        "algae_oil"
+      ],
+      "aliases": [
+        "omega 3",
+        "omega-3",
+        "epa",
+        "dha",
+        "fish oil",
+        "algenöl",
+        "fischöl"
+      ],
       "guidance_available": true,
       "with_food": "Mit einer Mahlzeit ist meist besser verträglich und kann Aufstoßen oder Magenbeschwerden reduzieren.",
       "time_of_day": "Kein belegter allgemeiner Vorteil für morgens oder abends; regelmäßig nach Etikett einnehmen.",
-      "interactions": ["Höhere Mengen können die Wirkung von gerinnungshemmenden Medikamenten beeinflussen; ärztlich abklären."],
-      "contraindications": ["Bei Fisch- oder Meeresfrüchteallergie die Quelle prüfen; Algenöl kann eine Alternative sein.", "Vor Operationen und bei Blutungsstörungen Einnahme mit Arzt oder Apotheke abstimmen."],
-      "source_ids": ["nih_omega3", "internal_catalog"]
+      "interactions": [
+        "Höhere Mengen können die Wirkung von gerinnungshemmenden Medikamenten beeinflussen; ärztlich abklären."
+      ],
+      "contraindications": [
+        "Bei Fisch- oder Meeresfrüchteallergie die Quelle prüfen; Algenöl kann eine Alternative sein.",
+        "Vor Operationen und bei Blutungsstörungen Einnahme mit Arzt oder Apotheke abstimmen."
+      ],
+      "source_ids": [
+        "nih_omega3",
+        "internal_catalog"
+      ]
     },
     {
       "id": "magnesium",
       "display_name": "Magnesium",
-      "ingredient_keys": ["magnesium", "magnesium_citrate", "magnesium_glycinate", "magnesium_bis_glycinate", "magnesium_oxide"],
-      "aliases": ["magnesium", "magnesiumcitrat", "magnesiumglycinat", "магний", "цитрат магния"],
+      "ingredient_keys": [
+        "magnesium",
+        "magnesium_citrate",
+        "magnesium_glycinate",
+        "magnesium_bis_glycinate",
+        "magnesium_oxide"
+      ],
+      "aliases": [
+        "magnesium",
+        "magnesiumcitrat",
+        "magnesiumglycinat"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Essen möglich. Bei Durchfall oder Magenbeschwerden mit einer Mahlzeit einnehmen; Citrat und Oxid wirken häufiger abführend.",
       "time_of_day": "Für eine generelle Abend-Einnahme gibt es keinen verbindlichen Nachweis. Der Zeitpunkt kann nach Verträglichkeit gewählt werden.",
-      "interactions": ["Zu Tetrazyklin- und Chinolon-Antibiotika zeitlichen Abstand nach Packungsbeilage oder Apothekenhinweis halten.", "Bisphosphonate und Magnesium nicht gleichzeitig einnehmen."],
-      "contraindications": ["Bei eingeschränkter Nierenfunktion nur nach ärztlicher Rücksprache, da Magnesium schlechter ausgeschieden werden kann."],
-      "source_ids": ["nih_magnesium", "internal_catalog"]
+      "interactions": [
+        "Zu Tetrazyklin- und Chinolon-Antibiotika zeitlichen Abstand nach Packungsbeilage oder Apothekenhinweis halten.",
+        "Bisphosphonate und Magnesium nicht gleichzeitig einnehmen."
+      ],
+      "contraindications": [
+        "Bei eingeschränkter Nierenfunktion nur nach ärztlicher Rücksprache, da Magnesium schlechter ausgeschieden werden kann."
+      ],
+      "source_ids": [
+        "nih_magnesium",
+        "internal_catalog"
+      ]
     },
     {
       "id": "vitamin_b12",
       "display_name": "Vitamin B12",
-      "ingredient_keys": ["vitamin_b12", "methylcobalamin", "adenosylcobalamin"],
-      "aliases": ["vitamin b12", "b12", "methylcobalamin", "adenosylcobalamin", "витамин b12"],
+      "ingredient_keys": [
+        "vitamin_b12",
+        "methylcobalamin",
+        "adenosylcobalamin"
+      ],
+      "aliases": [
+        "vitamin b12",
+        "b12",
+        "methylcobalamin",
+        "adenosylcobalamin"
+      ],
       "guidance_available": true,
       "with_food": "Kann grundsätzlich mit oder ohne Mahlzeit eingenommen werden; bei Spray oder Lutschtabletten die Produktanleitung beachten.",
       "time_of_day": "Kein belegter allgemeiner Vorteil für morgens oder abends.",
-      "interactions": ["Metformin und säurehemmende Medikamente können langfristig den B12-Status beeinflussen; das ist ein Grund für Kontrolle, nicht für eigenständige Hochdosierung."],
-      "contraindications": ["Bei ungeklärter Anämie zuerst die Ursache medizinisch abklären."],
-      "source_ids": ["nih_b12", "internal_catalog"]
+      "interactions": [
+        "Metformin und säurehemmende Medikamente können langfristig den B12-Status beeinflussen; das ist ein Grund für Kontrolle, nicht für eigenständige Hochdosierung."
+      ],
+      "contraindications": [
+        "Bei ungeklärter Anämie zuerst die Ursache medizinisch abklären."
+      ],
+      "source_ids": [
+        "nih_b12",
+        "internal_catalog"
+      ]
     },
     {
       "id": "ashwagandha",
       "display_name": "Ashwagandha",
-      "ingredient_keys": ["ashwagandha", "ksm66", "withanolides"],
-      "aliases": ["ashwagandha", "ksm-66", "ksm66", "withanolides", "ашваганда"],
+      "ingredient_keys": [
+        "ashwagandha",
+        "ksm66",
+        "withanolides"
+      ],
+      "aliases": [
+        "ashwagandha",
+        "ksm-66",
+        "ksm66",
+        "withanolides"
+      ],
       "guidance_available": true,
       "with_food": "Kein verpflichtender Nahrungsbezug. Bei Magenbeschwerden mit einer Mahlzeit einnehmen.",
       "time_of_day": "Kein universell belegter Zeitpunkt. Wenn das Produkt müde macht, ist abends praktischer; bei gegenteiliger Wirkung früher am Tag.",
-      "interactions": ["Mögliche Wechselwirkungen mit Beruhigungsmitteln, Schilddrüsen-, Blutdruck-, Diabetes- und immunsuppressiven Medikamenten."],
-      "contraindications": ["In Schwangerschaft und Stillzeit vermeiden.", "Vor Operationen absetzen nach ärztlicher Empfehlung.", "Bei Schilddrüsen- oder Autoimmunerkrankung sowie früherer Lebererkrankung nur nach medizinischer Rücksprache."],
-      "source_ids": ["nccih_ashwagandha", "internal_catalog"]
+      "interactions": [
+        "Mögliche Wechselwirkungen mit Beruhigungsmitteln, Schilddrüsen-, Blutdruck-, Diabetes- und immunsuppressiven Medikamenten."
+      ],
+      "contraindications": [
+        "In Schwangerschaft und Stillzeit vermeiden.",
+        "Vor Operationen absetzen nach ärztlicher Empfehlung.",
+        "Bei Schilddrüsen- oder Autoimmunerkrankung sowie früherer Lebererkrankung nur nach medizinischer Rücksprache."
+      ],
+      "source_ids": [
+        "nccih_ashwagandha",
+        "internal_catalog"
+      ]
     },
     {
       "id": "probiotics",
       "display_name": "Probiotika",
-      "ingredient_keys": ["probiotics", "lactobacillus", "bifidobacterium"],
-      "aliases": ["probiotika", "probiotics", "lactobacillus", "bifidobacterium", "пробиотики"],
+      "ingredient_keys": [
+        "probiotics",
+        "lactobacillus",
+        "bifidobacterium"
+      ],
+      "aliases": [
+        "probiotika",
+        "probiotics",
+        "lactobacillus",
+        "bifidobacterium"
+      ],
       "guidance_available": true,
       "with_food": "Es gibt keine für alle Stämme gültige Regel. Lagerung und Einnahme exakt nach Produktetikett beachten.",
       "time_of_day": "Kein universell belegter Zeitpunkt; entscheidend sind Stamm, Produktform und Herstellerangaben.",
-      "interactions": ["Bei gleichzeitiger Antibiotika-Einnahme den Abstand mit Arzt, Apotheke oder Produktanleitung klären; er ist stamm- und präparatabhängig."],
-      "contraindications": ["Bei schwerer Erkrankung, stark geschwächtem Immunsystem oder zentralem Venenkatheter nur nach ärztlicher Empfehlung."],
-      "source_ids": ["nccih_probiotics", "internal_catalog"]
+      "interactions": [
+        "Bei gleichzeitiger Antibiotika-Einnahme den Abstand mit Arzt, Apotheke oder Produktanleitung klären; er ist stamm- und präparatabhängig."
+      ],
+      "contraindications": [
+        "Bei schwerer Erkrankung, stark geschwächtem Immunsystem oder zentralem Venenkatheter nur nach ärztlicher Empfehlung."
+      ],
+      "source_ids": [
+        "nccih_probiotics",
+        "internal_catalog"
+      ]
     },
     {
       "id": "zinc",
       "display_name": "Zink",
-      "ingredient_keys": ["zinc", "zinc_bisglycinate", "zinc_gluconate", "zinc_picolinate"],
-      "aliases": ["zink", "zinc", "zinkgluconat", "zinkpicolinat", "цинк"],
+      "ingredient_keys": [
+        "zinc",
+        "zinc_bisglycinate",
+        "zinc_gluconate",
+        "zinc_picolinate"
+      ],
+      "aliases": [
+        "zink",
+        "zinc",
+        "zinkgluconat",
+        "zinkpicolinat"
+      ],
       "guidance_available": true,
       "with_food": "Nüchtern kann Zink besser aufgenommen werden, verursacht aber häufig Übelkeit. Dann mit einer kleinen Mahlzeit einnehmen.",
       "time_of_day": "Kein belegter allgemeiner Vorteil für morgens oder abends.",
-      "interactions": ["Zu Tetrazyklin- und Chinolon-Antibiotika zeitlichen Abstand nach Fachinformation halten.", "Penicillamin nicht gleichzeitig mit Zink einnehmen.", "Hohe Zinkmengen über längere Zeit können Kupfermangel verursachen."],
-      "contraindications": ["Langfristige Hochdosierung ohne nachgewiesenen Bedarf vermeiden."],
-      "source_ids": ["nih_zinc", "internal_catalog"]
+      "interactions": [
+        "Zu Tetrazyklin- und Chinolon-Antibiotika zeitlichen Abstand nach Fachinformation halten.",
+        "Penicillamin nicht gleichzeitig mit Zink einnehmen.",
+        "Hohe Zinkmengen über längere Zeit können Kupfermangel verursachen."
+      ],
+      "contraindications": [
+        "Langfristige Hochdosierung ohne nachgewiesenen Bedarf vermeiden."
+      ],
+      "source_ids": [
+        "nih_zinc",
+        "internal_catalog"
+      ]
     },
     {
       "id": "creatine",
       "display_name": "Kreatin-Monohydrat",
-      "ingredient_keys": ["creatine", "creatine_monohydrate"],
-      "aliases": ["kreatin", "creatin", "creatine", "creatine monohydrate", "креатин"],
+      "ingredient_keys": [
+        "creatine",
+        "creatine_monohydrate"
+      ],
+      "aliases": [
+        "kreatin",
+        "creatin",
+        "creatine",
+        "creatine monohydrate"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Mahlzeit möglich. Ausreichend trinken und die Etikett-Dosierung verwenden.",
       "time_of_day": "Die regelmäßige tägliche Einnahme ist wichtiger als ein bestimmter Zeitpunkt; ein eindeutiger Vorteil direkt vor oder nach dem Training ist nicht gesichert.",
-      "interactions": ["Bei Medikamenten, die die Nieren belasten können, vorher ärztlich oder pharmazeutisch abklären."],
-      "contraindications": ["Bei bekannter Nierenerkrankung, Schwangerschaft, Stillzeit oder unter 18 Jahren nur nach professioneller Beratung."],
-      "source_ids": ["nih_performance", "issn_creatine", "internal_catalog"]
+      "interactions": [
+        "Bei Medikamenten, die die Nieren belasten können, vorher ärztlich oder pharmazeutisch abklären."
+      ],
+      "contraindications": [
+        "Bei bekannter Nierenerkrankung, Schwangerschaft, Stillzeit oder unter 18 Jahren nur nach professioneller Beratung."
+      ],
+      "source_ids": [
+        "nih_performance",
+        "issn_creatine",
+        "internal_catalog"
+      ]
     },
     {
       "id": "vitamin_c",
       "display_name": "Vitamin C",
-      "ingredient_keys": ["vitamin_c", "ascorbic_acid", "calcium_ascorbate", "acerola", "bioflavonoids", "rose_hips"],
-      "aliases": ["vitamin c", "ascorbinsäure", "acerola", "hagebutte", "bioflavonoide", "витамин c", "аскорбиновая кислота"],
+      "ingredient_keys": [
+        "vitamin_c",
+        "ascorbic_acid",
+        "calcium_ascorbate",
+        "acerola",
+        "bioflavonoids",
+        "rose_hips"
+      ],
+      "aliases": [
+        "vitamin c",
+        "ascorbinsäure",
+        "acerola",
+        "hagebutte",
+        "bioflavonoide"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Mahlzeit möglich. Bei saurem Magen oder Übelkeit mit Essen einnehmen.",
       "time_of_day": "Kein belegter allgemeiner Vorteil für morgens oder abends.",
-      "interactions": ["Hohe Mengen können bestimmte Laborwerte beeinflussen und sollten während Chemo- oder Strahlentherapie nur nach Rücksprache verwendet werden."],
-      "contraindications": ["Bei Hämochromatose oder wiederkehrenden Nierensteinen hohe Mengen vermeiden und ärztlich abklären."],
-      "source_ids": ["nih_vitamin_c", "internal_catalog"]
+      "interactions": [
+        "Hohe Mengen können bestimmte Laborwerte beeinflussen und sollten während Chemo- oder Strahlentherapie nur nach Rücksprache verwendet werden."
+      ],
+      "contraindications": [
+        "Bei Hämochromatose oder wiederkehrenden Nierensteinen hohe Mengen vermeiden und ärztlich abklären."
+      ],
+      "source_ids": [
+        "nih_vitamin_c",
+        "internal_catalog"
+      ]
     },
     {
       "id": "iron",
       "display_name": "Eisen",
-      "ingredient_keys": ["iron", "iron_glycine_sulfate"],
-      "aliases": ["eisen", "ferrous", "iron", "ferro", "железо"],
+      "ingredient_keys": [
+        "iron",
+        "iron_glycine_sulfate"
+      ],
+      "aliases": [
+        "eisen",
+        "ferrous",
+        "iron",
+        "ferro"
+      ],
       "guidance_available": true,
       "with_food": "Am besten nüchtern: etwa 30 Minuten vor oder 2 Stunden nach dem Essen. Bei Magenbeschwerden mit etwas Nahrung. Tee, Kaffee, Eier und Milchprodukte mit ungefähr 2 Stunden Abstand; Vitamin C kann die Aufnahme unterstützen.",
       "time_of_day": "Kein zwingender Morgen- oder Abendzeitpunkt. Wichtiger sind Abstand zu hemmenden Lebensmitteln und gute Verträglichkeit.",
-      "interactions": ["Abstand zu Levothyroxin, Antazida, Calcium sowie bestimmten Antibiotika ist erforderlich; genaue Zeiten aus Fachinformation oder Apotheke beachten."],
-      "contraindications": ["Nur bei bestätigtem Bedarf oder medizinischer Empfehlung einnehmen.", "Nicht bei Eisenüberladung wie Hämochromatose ohne ärztliche Anweisung.", "Für Kinder wegen Vergiftungsgefahr unzugänglich aufbewahren."],
-      "source_ids": ["nih_iron", "nhs_iron", "internal_catalog"]
+      "interactions": [
+        "Abstand zu Levothyroxin, Antazida, Calcium sowie bestimmten Antibiotika ist erforderlich; genaue Zeiten aus Fachinformation oder Apotheke beachten."
+      ],
+      "contraindications": [
+        "Nur bei bestätigtem Bedarf oder medizinischer Empfehlung einnehmen.",
+        "Nicht bei Eisenüberladung wie Hämochromatose ohne ärztliche Anweisung.",
+        "Für Kinder wegen Vergiftungsgefahr unzugänglich aufbewahren."
+      ],
+      "source_ids": [
+        "nih_iron",
+        "nhs_iron",
+        "internal_catalog"
+      ]
     },
     {
       "id": "collagen",
       "display_name": "Kollagen / Hyaluronsäure",
-      "ingredient_keys": ["collagen", "collagen_peptides", "hyaluronic_acid"],
-      "aliases": ["kollagen", "collagen", "collagen peptides", "hyaluronsäure", "hyaluronic acid", "коллаген", "гиалуроновая кислота"],
+      "ingredient_keys": [
+        "collagen",
+        "collagen_peptides",
+        "hyaluronic_acid"
+      ],
+      "aliases": [
+        "kollagen",
+        "collagen",
+        "collagen peptides",
+        "hyaluronsäure",
+        "hyaluronic acid"
+      ],
       "guidance_available": true,
       "with_food": "Kann mit oder ohne Mahlzeit eingenommen werden; für eine bessere Wirkung durch einen bestimmten Nahrungszeitpunkt gibt es keine etablierte Regel.",
       "time_of_day": "Kein belegter Vorteil für morgens, abends oder unmittelbar nach dem Training.",
-      "interactions": ["Keine allgemein etablierte relevante Wechselwirkung; zusätzliche Zutaten des konkreten Produkts separat prüfen."],
-      "contraindications": ["Quelle des Kollagens bei Fisch-, Rinder- oder anderen Proteinallergien prüfen.", "Für orale Hyaluronsäure sind Daten in Schwangerschaft und Stillzeit begrenzt."],
-      "source_ids": ["internal_catalog"]
+      "interactions": [
+        "Keine allgemein etablierte relevante Wechselwirkung; zusätzliche Zutaten des konkreten Produkts separat prüfen."
+      ],
+      "contraindications": [
+        "Quelle des Kollagens bei Fisch-, Rinder- oder anderen Proteinallergien prüfen.",
+        "Für orale Hyaluronsäure sind Daten in Schwangerschaft und Stillzeit begrenzt."
+      ],
+      "source_ids": [
+        "internal_catalog"
+      ]
     },
     {
       "id": "curcumin",
       "display_name": "Kurkuma / Curcumin mit Piperin",
-      "ingredient_keys": ["turmeric", "curcumin", "black_pepper", "piperine"],
-      "aliases": ["kurkuma", "curcumin", "turmeric", "piperin", "piperine", "куркума", "куркумин"],
+      "ingredient_keys": [
+        "turmeric",
+        "curcumin",
+        "black_pepper",
+        "piperine"
+      ],
+      "aliases": [
+        "kurkuma",
+        "curcumin",
+        "turmeric",
+        "piperin",
+        "piperine"
+      ],
       "guidance_available": true,
       "with_food": "Mit einer Mahlzeit ist häufig besser verträglich. Hoch bioverfügbare Produkte mit Piperin nicht höher dosieren als angegeben.",
       "time_of_day": "Kein belegter allgemeiner Vorteil für morgens oder abends.",
-      "interactions": ["Piperin kann die Aufnahme und den Abbau verschiedener Medikamente verändern.", "Bei gerinnungshemmenden Medikamenten vor der Einnahme professionell beraten lassen."],
-      "contraindications": ["Bei Gallenwegserkrankungen, Lebererkrankung, Schwangerschaft oder vor Operationen nur nach Rücksprache.", "Bei dunklem Urin, Gelbsucht oder starkem Juckreiz absetzen und medizinisch abklären."],
-      "source_ids": ["nccih_turmeric", "internal_catalog"]
+      "interactions": [
+        "Piperin kann die Aufnahme und den Abbau verschiedener Medikamente verändern.",
+        "Bei gerinnungshemmenden Medikamenten vor der Einnahme professionell beraten lassen."
+      ],
+      "contraindications": [
+        "Bei Gallenwegserkrankungen, Lebererkrankung, Schwangerschaft oder vor Operationen nur nach Rücksprache.",
+        "Bei dunklem Urin, Gelbsucht oder starkem Juckreiz absetzen und medizinisch abklären."
+      ],
+      "source_ids": [
+        "nccih_turmeric",
+        "internal_catalog"
+      ]
     },
     {
       "id": "b_complex",
       "display_name": "B-Vitamin-Komplex",
-      "ingredient_keys": ["b_vitamins"],
-      "aliases": ["b-vitamine", "b komplex", "b-complex", "b vitamins", "витамины группы b"],
+      "ingredient_keys": [
+        "b_vitamins"
+      ],
+      "aliases": [
+        "b-vitamine",
+        "b komplex",
+        "b-complex",
+        "b vitamins"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Essen möglich; mit einer Mahlzeit ist ein B-Komplex oft magenfreundlicher.",
       "time_of_day": "Eine Einnahme morgens ist eine praktische Routine, aber kein allgemeines wissenschaftliches Muss. Einzelne enthaltene B-Vitamine können andere Regeln haben.",
-      "interactions": ["Wechselwirkungen hängen von den enthaltenen Einzelvitaminen und der Dosis ab; vollständiges Etikett prüfen."],
-      "contraindications": ["Langfristige hochdosierte Kombiprodukte nicht ohne Prüfung der Einzelmengen verwenden, insbesondere bei Vitamin B6 und Niacin."],
-      "source_ids": ["internal_catalog"]
+      "interactions": [
+        "Wechselwirkungen hängen von den enthaltenen Einzelvitaminen und der Dosis ab; vollständiges Etikett prüfen."
+      ],
+      "contraindications": [
+        "Langfristige hochdosierte Kombiprodukte nicht ohne Prüfung der Einzelmengen verwenden, insbesondere bei Vitamin B6 und Niacin."
+      ],
+      "source_ids": [
+        "internal_catalog"
+      ]
     },
     {
       "id": "protein",
       "display_name": "Protein-Pulver",
-      "ingredient_keys": ["protein", "whey_isolate", "pea_protein", "rice_protein", "hemp_protein"],
-      "aliases": ["protein", "eiweiß", "whey", "molkenprotein", "pea protein", "vegan protein", "протеин", "сывороточный протеин"],
+      "ingredient_keys": [
+        "protein",
+        "whey_isolate",
+        "pea_protein",
+        "rice_protein",
+        "hemp_protein"
+      ],
+      "aliases": [
+        "protein",
+        "eiweiß",
+        "whey",
+        "molkenprotein",
+        "pea protein",
+        "vegan protein"
+      ],
       "guidance_available": true,
       "with_food": "Als Teil einer Mahlzeit oder separat möglich; die tägliche Gesamtzufuhr ist entscheidend.",
       "time_of_day": "Über den Tag verteilen. Rund um das Training ist praktisch, aber kein enges Minutenfenster erforderlich.",
-      "interactions": ["Zusätzliche Inhaltsstoffe und Süßungsmittel des Produkts prüfen."],
-      "contraindications": ["Bei Nierenerkrankung die Proteinzufuhr professionell abstimmen.", "Bei Milchallergie kein Whey; bei anderen Allergien die jeweilige Proteinquelle prüfen."],
-      "source_ids": ["nih_performance", "issn_protein", "internal_catalog"]
+      "interactions": [
+        "Zusätzliche Inhaltsstoffe und Süßungsmittel des Produkts prüfen."
+      ],
+      "contraindications": [
+        "Bei Nierenerkrankung die Proteinzufuhr professionell abstimmen.",
+        "Bei Milchallergie kein Whey; bei anderen Allergien die jeweilige Proteinquelle prüfen."
+      ],
+      "source_ids": [
+        "nih_performance",
+        "issn_protein",
+        "internal_catalog"
+      ]
     },
     {
       "id": "bcaa",
       "display_name": "BCAA",
-      "ingredient_keys": ["bcaa"],
-      "aliases": ["bcaa", "branched chain amino acids", "verzweigtkettige aminosäuren", "бцаа", "аминокислоты bcaa"],
+      "ingredient_keys": [
+        "bcaa"
+      ],
+      "aliases": [
+        "bcaa",
+        "branched chain amino acids",
+        "verzweigtkettige aminosäuren"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Essen möglich; Etikett beachten.",
       "time_of_day": "Kein klar belegter optimaler Zeitpunkt. Bei ausreichender hochwertiger Proteinzufuhr ist ein zusätzlicher Nutzen oft nicht belegt.",
-      "interactions": ["Nicht als Ersatz für eine ausreichende Gesamtprotein- und Energiezufuhr verwenden."],
-      "contraindications": ["Bei Schwangerschaft, Stillzeit, Kindern oder Störungen des Aminosäurestoffwechsels nur nach professioneller Beratung."],
-      "source_ids": ["nih_performance", "issn_protein", "internal_catalog"]
+      "interactions": [
+        "Nicht als Ersatz für eine ausreichende Gesamtprotein- und Energiezufuhr verwenden."
+      ],
+      "contraindications": [
+        "Bei Schwangerschaft, Stillzeit, Kindern oder Störungen des Aminosäurestoffwechsels nur nach professioneller Beratung."
+      ],
+      "source_ids": [
+        "nih_performance",
+        "issn_protein",
+        "internal_catalog"
+      ]
     },
     {
       "id": "calcium",
       "display_name": "Calcium",
-      "ingredient_keys": ["calcium"],
-      "aliases": ["calcium", "kalzium", "кальций"],
+      "ingredient_keys": [
+        "calcium"
+      ],
+      "aliases": [
+        "calcium",
+        "kalzium"
+      ],
       "guidance_available": true,
       "with_food": "Calciumcarbonat mit einer Mahlzeit; Calciumcitrat kann mit oder ohne Essen genommen werden. Einzelportionen bis etwa 500 mg werden besser aufgenommen als sehr große Einzeldosen.",
       "time_of_day": "Kein allgemeiner Morgen- oder Abendvorteil; größere Tagesmengen aufteilen.",
-      "interactions": ["Abstand zu Levothyroxin, bestimmten Antibiotika, Bisphosphonaten und Eisenpräparaten halten; konkrete Zeiten aus Fachinformation oder Apotheke beachten."],
-      "contraindications": ["Bei Hyperkalzämie, Nierensteinen oder Nierenerkrankung nur nach ärztlicher Rücksprache."],
-      "source_ids": ["nih_calcium", "internal_catalog"]
+      "interactions": [
+        "Abstand zu Levothyroxin, bestimmten Antibiotika, Bisphosphonaten und Eisenpräparaten halten; konkrete Zeiten aus Fachinformation oder Apotheke beachten."
+      ],
+      "contraindications": [
+        "Bei Hyperkalzämie, Nierensteinen oder Nierenerkrankung nur nach ärztlicher Rücksprache."
+      ],
+      "source_ids": [
+        "nih_calcium",
+        "internal_catalog"
+      ]
     },
     {
       "id": "green_powders",
       "display_name": "Spirulina, Gerstengras und Chlorophyll-Produkte",
-      "ingredient_keys": ["spirulina", "barley_grass", "chlorophyll"],
-      "aliases": ["spirulina", "gerstengras", "barley grass", "chlorophyll", "спирулина", "хлорофилл"],
+      "ingredient_keys": [
+        "spirulina",
+        "barley_grass",
+        "chlorophyll"
+      ],
+      "aliases": [
+        "spirulina",
+        "gerstengras",
+        "barley grass",
+        "chlorophyll"
+      ],
       "guidance_available": false,
       "with_food": "Für diese heterogene Produktgruppe ist kein einheitlich verifiziertes Einnahmeschema hinterlegt; Produktetikett verwenden.",
       "time_of_day": "Kein verifizierter allgemeiner Zeitpunkt.",
-      "interactions": ["Zusammensetzung und mögliche Vitamin-K-, Jod- oder Pflanzenbestandteile des konkreten Produkts prüfen."],
-      "contraindications": ["Bei Autoimmunerkrankungen, Phenylketonurie, Schwangerschaft oder Blutverdünnern vorab professionell beraten lassen.", "Nur Produkte mit nachvollziehbarer Qualitäts- und Kontaminationsprüfung verwenden."],
-      "source_ids": ["internal_catalog"]
+      "interactions": [
+        "Zusammensetzung und mögliche Vitamin-K-, Jod- oder Pflanzenbestandteile des konkreten Produkts prüfen."
+      ],
+      "contraindications": [
+        "Bei Autoimmunerkrankungen, Phenylketonurie, Schwangerschaft oder Blutverdünnern vorab professionell beraten lassen.",
+        "Nur Produkte mit nachvollziehbarer Qualitäts- und Kontaminationsprüfung verwenden."
+      ],
+      "source_ids": [
+        "internal_catalog"
+      ]
     },
     {
       "id": "joint_support",
       "display_name": "Glucosamin und Chondroitin",
-      "ingredient_keys": ["glucosamine", "chondroitin"],
-      "aliases": ["glucosamin", "glucosamine", "chondroitin", "глюкозамин", "хондроитин"],
+      "ingredient_keys": [
+        "glucosamine",
+        "chondroitin"
+      ],
+      "aliases": [
+        "glucosamin",
+        "glucosamine",
+        "chondroitin"
+      ],
       "guidance_available": true,
       "with_food": "Mit einer Mahlzeit kann Magenbeschwerden reduzieren; kein belegter Vorteil eines bestimmten Nahrungszeitpunkts.",
       "time_of_day": "Kein belegter Morgen- oder Abendvorteil.",
-      "interactions": ["Glucosamin oder Chondroitin können mit Warfarin interagieren und das Blutungsrisiko erhöhen."],
-      "contraindications": ["Bei Diabetes Blutzucker beobachten und vorher beraten lassen.", "Bei Schalentierallergie die Rohstoffquelle prüfen.", "Für Schwangerschaft und Stillzeit fehlen ausreichende Sicherheitsdaten."],
-      "source_ids": ["nccih_joint", "internal_catalog"]
+      "interactions": [
+        "Glucosamin oder Chondroitin können mit Warfarin interagieren und das Blutungsrisiko erhöhen."
+      ],
+      "contraindications": [
+        "Bei Diabetes Blutzucker beobachten und vorher beraten lassen.",
+        "Bei Schalentierallergie die Rohstoffquelle prüfen.",
+        "Für Schwangerschaft und Stillzeit fehlen ausreichende Sicherheitsdaten."
+      ],
+      "source_ids": [
+        "nccih_joint",
+        "internal_catalog"
+      ]
     },
     {
       "id": "fiber",
       "display_name": "Ballaststoffe / Inulin",
-      "ingredient_keys": ["fiber", "inulin"],
-      "aliases": ["ballaststoffe", "fiber", "inulin", "клетчатка", "инулин"],
+      "ingredient_keys": [
+        "fiber",
+        "inulin"
+      ],
+      "aliases": [
+        "ballaststoffe",
+        "fiber",
+        "inulin"
+      ],
       "guidance_available": true,
       "with_food": "Mit ausreichend Flüssigkeit einnehmen und die Menge langsam steigern; Essen ist nicht zwingend.",
       "time_of_day": "Kein allgemeiner optimaler Zeitpunkt. Regelmäßigkeit und Verträglichkeit sind wichtiger.",
-      "interactions": ["Ballaststoffpräparate können die Aufnahme von Medikamenten beeinflussen; vorsorglich Abstand nach Etikett oder Apothekenhinweis halten."],
-      "contraindications": ["Bei Schluckstörungen, Darmverengung oder ungeklärten starken Bauchbeschwerden nicht ohne ärztliche Abklärung verwenden.", "Inulin kann bei empfindlichem Darm Blähungen verstärken."],
-      "source_ids": ["internal_catalog"]
+      "interactions": [
+        "Ballaststoffpräparate können die Aufnahme von Medikamenten beeinflussen; vorsorglich Abstand nach Etikett oder Apothekenhinweis halten."
+      ],
+      "contraindications": [
+        "Bei Schluckstörungen, Darmverengung oder ungeklärten starken Bauchbeschwerden nicht ohne ärztliche Abklärung verwenden.",
+        "Inulin kann bei empfindlichem Darm Blähungen verstärken."
+      ],
+      "source_ids": [
+        "internal_catalog"
+      ]
     },
     {
       "id": "melatonin",
       "display_name": "Melatonin",
-      "ingredient_keys": ["melatonin"],
-      "aliases": ["melatonin", "мелатонин"],
+      "ingredient_keys": [
+        "melatonin"
+      ],
+      "aliases": [
+        "melatonin"
+      ],
       "guidance_available": true,
       "with_food": "Die Einnahme in Bezug auf Mahlzeiten hängt von Formulierung und Produktanleitung ab; bei verschreibungspflichtigen Retardformen gelten besondere Regeln.",
       "time_of_day": "Typischerweise zeitnah vor der geplanten Schlafenszeit; der genaue Abstand hängt von Präparat und Anwendungsgrund ab. Etikett oder ärztliche Anweisung hat Vorrang.",
-      "interactions": ["Mögliche Wechselwirkungen mit Beruhigungsmitteln, Antikoagulanzien, Epilepsie-, Blutdruck- und Diabetesmedikamenten.", "Nach Einnahme nicht fahren oder Maschinen bedienen, wenn Müdigkeit besteht."],
-      "contraindications": ["In Schwangerschaft, Stillzeit, bei Kindern oder längerfristiger Anwendung nur nach professioneller Beratung.", "Nicht zur eigenständigen Behandlung chronischer Schlafprobleme verwenden."],
-      "source_ids": ["nccih_melatonin", "nhs_melatonin", "internal_catalog"]
+      "interactions": [
+        "Mögliche Wechselwirkungen mit Beruhigungsmitteln, Antikoagulanzien, Epilepsie-, Blutdruck- und Diabetesmedikamenten.",
+        "Nach Einnahme nicht fahren oder Maschinen bedienen, wenn Müdigkeit besteht."
+      ],
+      "contraindications": [
+        "In Schwangerschaft, Stillzeit, bei Kindern oder längerfristiger Anwendung nur nach professioneller Beratung.",
+        "Nicht zur eigenständigen Behandlung chronischer Schlafprobleme verwenden."
+      ],
+      "source_ids": [
+        "nccih_melatonin",
+        "nhs_melatonin",
+        "internal_catalog"
+      ]
     },
     {
       "id": "l_theanine",
       "display_name": "L-Theanin",
-      "ingredient_keys": ["l_theanine"],
-      "aliases": ["l-theanin", "l theanine", "theanine", "л-теанин", "теанин"],
+      "ingredient_keys": [
+        "l_theanine"
+      ],
+      "aliases": [
+        "l-theanin",
+        "l theanine",
+        "theanine"
+      ],
       "guidance_available": false,
       "with_food": "Kein verifiziertes allgemeines Schema in der kontrollierten Basis; Produktetikett beachten.",
       "time_of_day": "Kein ausreichend etablierter optimaler Zeitpunkt. Nicht automatisch als Schlafmittel einordnen.",
-      "interactions": ["Mögliche additive Wirkung mit beruhigenden oder blutdrucksenkenden Mitteln professionell abklären."],
-      "contraindications": ["Für Schwangerschaft, Stillzeit und Kinder fehlen ausreichende Sicherheitsdaten."],
-      "source_ids": ["internal_catalog"]
+      "interactions": [
+        "Mögliche additive Wirkung mit beruhigenden oder blutdrucksenkenden Mitteln professionell abklären."
+      ],
+      "contraindications": [
+        "Für Schwangerschaft, Stillzeit und Kinder fehlen ausreichende Sicherheitsdaten."
+      ],
+      "source_ids": [
+        "internal_catalog"
+      ]
     },
     {
       "id": "grape_seed",
       "display_name": "Traubenkernextrakt / OPC",
-      "ingredient_keys": ["grape_seed_extract", "opc"],
-      "aliases": ["traubenkernextrakt", "grape seed", "opc", "экстракт виноградных косточек"],
+      "ingredient_keys": [
+        "grape_seed_extract",
+        "opc"
+      ],
+      "aliases": [
+        "traubenkernextrakt",
+        "grape seed",
+        "opc"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Essen möglich; bei Magenbeschwerden mit einer Mahlzeit.",
       "time_of_day": "Kein belegter Morgen- oder Abendvorteil.",
-      "interactions": ["Mögliche additive Wirkung mit gerinnungshemmenden oder blutdrucksenkenden Medikamenten abklären."],
-      "contraindications": ["Vor Operationen sowie in Schwangerschaft und Stillzeit nur nach professioneller Beratung."],
-      "source_ids": ["nccih_grape_seed", "internal_catalog"]
+      "interactions": [
+        "Mögliche additive Wirkung mit gerinnungshemmenden oder blutdrucksenkenden Medikamenten abklären."
+      ],
+      "contraindications": [
+        "Vor Operationen sowie in Schwangerschaft und Stillzeit nur nach professioneller Beratung."
+      ],
+      "source_ids": [
+        "nccih_grape_seed",
+        "internal_catalog"
+      ]
     },
     {
       "id": "carnitine",
       "display_name": "L-Carnitin",
-      "ingredient_keys": ["l_carnitine"],
-      "aliases": ["l-carnitin", "l carnitine", "carnitine", "л-карнитин"],
+      "ingredient_keys": [
+        "l_carnitine"
+      ],
+      "aliases": [
+        "l-carnitin",
+        "l carnitine",
+        "carnitine"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Essen möglich; bei Übelkeit auf Mahlzeiten verteilen.",
       "time_of_day": "Kein belegter optimaler Zeitpunkt rund um das Training.",
-      "interactions": ["Mögliche Wechselwirkungen mit Warfarin; Valproat kann den Carnitinstatus beeinflussen und gehört in ärztliche Betreuung."],
-      "contraindications": ["Bei Krampfanfällen, Nierenerkrankung, Schwangerschaft oder Stillzeit vorher professionell beraten lassen."],
-      "source_ids": ["nih_carnitine", "internal_catalog"]
+      "interactions": [
+        "Mögliche Wechselwirkungen mit Warfarin; Valproat kann den Carnitinstatus beeinflussen und gehört in ärztliche Betreuung."
+      ],
+      "contraindications": [
+        "Bei Krampfanfällen, Nierenerkrankung, Schwangerschaft oder Stillzeit vorher professionell beraten lassen."
+      ],
+      "source_ids": [
+        "nih_carnitine",
+        "internal_catalog"
+      ]
     },
     {
       "id": "rhodiola",
       "display_name": "Rhodiola rosea",
-      "ingredient_keys": ["rhodiola", "rosavins", "salidroside"],
-      "aliases": ["rhodiola", "rosenwurz", "rosavine", "salidrosid", "родиола", "золотой корень"],
+      "ingredient_keys": [
+        "rhodiola",
+        "rosavins",
+        "salidroside"
+      ],
+      "aliases": [
+        "rhodiola",
+        "rosenwurz",
+        "rosavine",
+        "salidrosid"
+      ],
       "guidance_available": true,
       "with_food": "Kein etablierter Nahrungsbezug; bei Magenbeschwerden mit Essen.",
       "time_of_day": "Kein wissenschaftlich festgelegter Zeitpunkt. Wenn das Produkt anregend wirkt, eher früher am Tag und nicht spät abends.",
-      "interactions": ["Wechselwirkungen sind unzureichend untersucht; bei Antidepressiva, Stimulanzien oder anderen Psychopharmaka vorher beraten lassen."],
-      "contraindications": ["Bei bipolarer Erkrankung, Schwangerschaft, Stillzeit oder Kindern nicht ohne professionelle Beratung."],
-      "source_ids": ["nccih_rhodiola", "internal_catalog"]
+      "interactions": [
+        "Wechselwirkungen sind unzureichend untersucht; bei Antidepressiva, Stimulanzien oder anderen Psychopharmaka vorher beraten lassen."
+      ],
+      "contraindications": [
+        "Bei bipolarer Erkrankung, Schwangerschaft, Stillzeit oder Kindern nicht ohne professionelle Beratung."
+      ],
+      "source_ids": [
+        "nccih_rhodiola",
+        "internal_catalog"
+      ]
     },
     {
       "id": "ginger",
       "display_name": "Ingwer",
-      "ingredient_keys": ["ginger", "gingerols"],
-      "aliases": ["ingwer", "ginger", "gingerols", "имбирь"],
+      "ingredient_keys": [
+        "ginger",
+        "gingerols"
+      ],
+      "aliases": [
+        "ingwer",
+        "ginger",
+        "gingerols"
+      ],
       "guidance_available": true,
       "with_food": "Mit oder ohne Essen möglich; bei Sodbrennen oder Magenreizungen mit einer Mahlzeit.",
       "time_of_day": "Kein belegter Morgen- oder Abendvorteil.",
-      "interactions": ["Bei gerinnungshemmenden Medikamenten oder vor Operationen höhere Supplementmengen professionell abklären."],
-      "contraindications": ["Bei Gallensteinen, Schwangerschaft oder Blutungsstörungen konzentrierte Präparate nur nach Rücksprache."],
-      "source_ids": ["nccih_ginger", "internal_catalog"]
+      "interactions": [
+        "Bei gerinnungshemmenden Medikamenten oder vor Operationen höhere Supplementmengen professionell abklären."
+      ],
+      "contraindications": [
+        "Bei Gallensteinen, Schwangerschaft oder Blutungsstörungen konzentrierte Präparate nur nach Rücksprache."
+      ],
+      "source_ids": [
+        "nccih_ginger",
+        "internal_catalog"
+      ]
     },
     {
       "id": "electrolytes",
       "display_name": "Elektrolyte (Natrium, Kalium, Magnesium, Calcium)",
-      "ingredient_keys": ["electrolytes", "sodium", "potassium"],
-      "aliases": ["elektrolyte", "electrolytes", "natrium", "sodium", "kalium", "potassium", "электролиты", "калий", "натрий"],
+      "ingredient_keys": [
+        "electrolytes",
+        "sodium",
+        "potassium"
+      ],
+      "aliases": [
+        "elektrolyte",
+        "electrolytes",
+        "natrium",
+        "sodium",
+        "kalium",
+        "potassium"
+      ],
       "guidance_available": true,
       "with_food": "In Wasser nach Etikett auflösen. Ob zusätzliche Elektrolyte nötig sind, hängt von Schweißverlust, Belastung, Klima und Ernährung ab.",
       "time_of_day": "Situationsbezogen vor, während oder nach längerer starker Belastung; nicht routinemäßig wegen einer bestimmten Tageszeit.",
-      "interactions": ["Kalium kann mit ACE-Hemmern, AT1-Blockern und kaliumsparenden Diuretika gefährlich ansteigen.", "Natrium ist bei bestimmten Blutdruck-, Herz- und Nierenerkrankungen relevant."],
-      "contraindications": ["Bei Nieren-, Herz- oder Nebennierenerkrankung sowie verordneter Salz- oder Flüssigkeitsbeschränkung nur nach ärztlicher Rücksprache."],
-      "source_ids": ["nih_potassium", "nih_magnesium", "nih_calcium", "internal_catalog"]
+      "interactions": [
+        "Kalium kann mit ACE-Hemmern, AT1-Blockern und kaliumsparenden Diuretika gefährlich ansteigen.",
+        "Natrium ist bei bestimmten Blutdruck-, Herz- und Nierenerkrankungen relevant."
+      ],
+      "contraindications": [
+        "Bei Nieren-, Herz- oder Nebennierenerkrankung sowie verordneter Salz- oder Flüssigkeitsbeschränkung nur nach ärztlicher Rücksprache."
+      ],
+      "source_ids": [
+        "nih_potassium",
+        "nih_magnesium",
+        "nih_calcium",
+        "internal_catalog"
+      ]
     },
     {
       "id": "folate",
       "display_name": "Folsäure / Folat",
-      "ingredient_keys": ["folic_acid"],
-      "aliases": ["folsäure", "folat", "folic acid", "фолиевая кислота", "фолат"],
+      "ingredient_keys": [
+        "folic_acid"
+      ],
+      "aliases": [
+        "folsäure",
+        "folat",
+        "folic acid"
+      ],
       "guidance_available": true,
       "with_food": "Kann mit oder ohne Essen eingenommen werden.",
       "time_of_day": "Kein belegter Morgen- oder Abendvorteil.",
-      "interactions": ["Kann mit Methotrexat, bestimmten Antiepileptika und Sulfasalazin relevant interagieren; Indikation und Dosis ärztlich klären."],
-      "contraindications": ["Hohe Folsäuremengen können einen Vitamin-B12-Mangel verschleiern; bei ungeklärter Anämie beide Werte abklären."],
-      "source_ids": ["nih_folate", "internal_catalog"]
+      "interactions": [
+        "Kann mit Methotrexat, bestimmten Antiepileptika und Sulfasalazin relevant interagieren; Indikation und Dosis ärztlich klären."
+      ],
+      "contraindications": [
+        "Hohe Folsäuremengen können einen Vitamin-B12-Mangel verschleiern; bei ungeklärter Anämie beide Werte abklären."
+      ],
+      "source_ids": [
+        "nih_folate",
+        "internal_catalog"
+      ]
     },
     {
       "id": "vitamin_a",
       "display_name": "Vitamin A",
-      "ingredient_keys": ["vitamin_a"],
-      "aliases": ["vitamin a", "retinol", "витамин a", "ретинол"],
+      "ingredient_keys": [
+        "vitamin_a"
+      ],
+      "aliases": [
+        "vitamin a",
+        "retinol"
+      ],
       "guidance_available": true,
       "with_food": "Als fettlösliches Vitamin mit einer Mahlzeit einnehmen.",
       "time_of_day": "Kein belegter Morgen- oder Abendvorteil.",
-      "interactions": ["Retinoid-Medikamente und hoch dosiertes Vitamin A nicht ohne ärztliche Kontrolle kombinieren."],
-      "contraindications": ["In Schwangerschaft keine hoch dosierten Retinol-Präparate ohne ärztliche Anweisung.", "Bei Lebererkrankung und regelmäßig hohem Alkoholkonsum vorher beraten lassen."],
-      "source_ids": ["nih_vitamin_a", "internal_catalog"]
+      "interactions": [
+        "Retinoid-Medikamente und hoch dosiertes Vitamin A nicht ohne ärztliche Kontrolle kombinieren."
+      ],
+      "contraindications": [
+        "In Schwangerschaft keine hoch dosierten Retinol-Präparate ohne ärztliche Anweisung.",
+        "Bei Lebererkrankung und regelmäßig hohem Alkoholkonsum vorher beraten lassen."
+      ],
+      "source_ids": [
+        "nih_vitamin_a",
+        "internal_catalog"
+      ]
     },
     {
       "id": "vitamin_e",
       "display_name": "Vitamin E",
-      "ingredient_keys": ["vitamin_e"],
-      "aliases": ["vitamin e", "tocopherol", "витамин e", "токоферол"],
+      "ingredient_keys": [
+        "vitamin_e"
+      ],
+      "aliases": [
+        "vitamin e",
+        "tocopherol"
+      ],
       "guidance_available": true,
       "with_food": "Als fettlösliches Vitamin mit einer Mahlzeit einnehmen.",
       "time_of_day": "Kein belegter Morgen- oder Abendvorteil.",
-      "interactions": ["Höhere Supplementmengen können das Blutungsrisiko mit Antikoagulanzien oder Thrombozytenhemmern erhöhen."],
-      "contraindications": ["Vor Operationen und bei Blutungsstörungen hoch dosierte Präparate nur nach professioneller Rücksprache."],
-      "source_ids": ["nih_vitamin_e", "internal_catalog"]
+      "interactions": [
+        "Höhere Supplementmengen können das Blutungsrisiko mit Antikoagulanzien oder Thrombozytenhemmern erhöhen."
+      ],
+      "contraindications": [
+        "Vor Operationen und bei Blutungsstörungen hoch dosierte Präparate nur nach professioneller Rücksprache."
+      ],
+      "source_ids": [
+        "nih_vitamin_e",
+        "internal_catalog"
+      ]
     },
     {
       "id": "vitamin_k",
       "display_name": "Vitamin K / K2",
-      "ingredient_keys": ["vitamin_k2"],
-      "aliases": ["vitamin k", "vitamin k2", "menaquinon", "витамин k", "витамин k2"],
+      "ingredient_keys": [
+        "vitamin_k2"
+      ],
+      "aliases": [
+        "vitamin k",
+        "vitamin k2",
+        "menaquinon"
+      ],
       "guidance_available": true,
       "with_food": "Als fettlösliches Vitamin mit einer Mahlzeit einnehmen.",
       "time_of_day": "Kein belegter Morgen- oder Abendvorteil; bei Antikoagulation ist eine konstante Zufuhr wichtiger.",
-      "interactions": ["Starke und klinisch relevante Wechselwirkung mit Vitamin-K-Antagonisten wie Warfarin oder Phenprocoumon; Änderungen nur mit behandelndem Team."],
-      "contraindications": ["Bei Therapie mit Vitamin-K-Antagonisten kein K2-Präparat eigenständig beginnen oder absetzen."],
-      "source_ids": ["nih_vitamin_k", "internal_catalog"]
+      "interactions": [
+        "Starke und klinisch relevante Wechselwirkung mit Vitamin-K-Antagonisten wie Warfarin oder Phenprocoumon; Änderungen nur mit behandelndem Team."
+      ],
+      "contraindications": [
+        "Bei Therapie mit Vitamin-K-Antagonisten kein K2-Präparat eigenständig beginnen oder absetzen."
+      ],
+      "source_ids": [
+        "nih_vitamin_k",
+        "internal_catalog"
+      ]
     },
     {
       "id": "formula_components",
       "display_name": "Formulierungsbestandteile und unspezifische Extrakte",
-      "ingredient_keys": ["mct_oil", "olive_oil", "herbal_extracts", "histidine"],
-      "aliases": ["mct öl", "mct oil", "olivenöl", "olive oil", "herbal extracts", "kräuterextrakte", "histidin", "histidine"],
+      "ingredient_keys": [
+        "mct_oil",
+        "olive_oil",
+        "herbal_extracts",
+        "histidine"
+      ],
+      "aliases": [
+        "mct öl",
+        "mct oil",
+        "olivenöl",
+        "olive oil",
+        "herbal extracts",
+        "kräuterextrakte",
+        "histidin",
+        "histidine"
+      ],
       "guidance_available": false,
       "with_food": "Diese Tags beschreiben Trägerstoffe oder nicht ausreichend spezifizierte Mischbestandteile. Daraus lässt sich keine eigenständige Einnahmeregel ableiten.",
       "time_of_day": "Kein verifiziertes allgemeines Schema; das vollständige Produktetikett ist erforderlich.",
-      "interactions": ["Bei unspezifischen Kräuterextrakten können Wechselwirkungen erst nach Kenntnis aller Pflanzen und Mengen bewertet werden."],
-      "contraindications": ["Nicht aus einem Sammelbegriff auf Sicherheit schließen; vollständige Zutatenliste prüfen."],
-      "source_ids": ["internal_catalog"]
+      "interactions": [
+        "Bei unspezifischen Kräuterextrakten können Wechselwirkungen erst nach Kenntnis aller Pflanzen und Mengen bewertet werden."
+      ],
+      "contraindications": [
+        "Nicht aus einem Sammelbegriff auf Sicherheit schließen; vollständige Zutatenliste prüfen."
+      ],
+      "source_ids": [
+        "internal_catalog"
+      ]
     }
   ]
 }
